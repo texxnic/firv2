@@ -1,19 +1,47 @@
 body, html {
   padding: 0;
   margin: 0;
+  font-size: 16px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  color: #001441; }
+  line-height: 1.4;
+  color: #001441;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
 a {
   text-decoration: none;
   color: #001441; }
 
 h1 {
-  font-size: 110px;
+  font-size: 7rem;
+  margin: 0;
   font-family: sans-serif;
   font-family: 'Oswald', sans-serif;
   font-weight: 900; }
+
+h3 {
+  font-size: 2rem;
+  margin: 0;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300; }
+
+h4 {
+  font-weight: 700;
+  font-size: 1.2rem; }
+
+p {
+  margin: 0;
+  font-size: 1rem; }
+
+.jumbo {
+  position: absolute;
+  z-index: -2; }
+
+.jumboText {
+  height: 100vh;
+  display: flex;
+  align-items: center; }
 
 .jumbo__image {
   width: 110vw;
@@ -41,6 +69,9 @@ h1 {
   .jumbo_textWrap h1 {
     color: #3b4449; }
 
+.jumboText_adv {
+  color: #c4dfee; }
+
 .headerMenu {
   position: fixed;
   width: 100vw;
@@ -48,7 +79,8 @@ h1 {
   left: 0;
   z-index: 10;
   padding: 0.5rem 2rem;
-  color: white; }
+  color: white;
+  transition: 0.3s; }
   .headerMenu a {
     color: white; }
   .headerMenu .headerMenu_topRow {
@@ -58,12 +90,15 @@ h1 {
     .headerMenu .headerMenu_topRow a {
       margin: 0 1rem; }
   .headerMenu .headerMenu_botRow {
-    padding: 1rem 0; }
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
     .headerMenu .headerMenu_botRow a {
-      margin-right: 1rem;
+      margin: 0 1rem;
       font-weight: 500; }
   .headerMenu .headerMenu_menuLink {
-    justify-content: flex-end; }
+    margin-right: 1rem; }
 
 .VAcenter {
   display: flex;
@@ -77,7 +112,28 @@ h1 {
   width: auto;
   margin-right: 1rem; }
 
+.headerScroll {
+  background-color: #c4dfee;
+  transition: 0.3s;
+  color: #001441; }
+  .headerScroll a {
+    color: #001441; }
+  .headerScroll .logoHeaderBlack {
+    opacity: 1;
+    transition: 0.3s; }
+
 .headerMenu_bot_right {
-  display: flex;
-  align-items: center;
-  justify-content: space-around; }
+  position: relative; }
+
+.logoHeaderBlack {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: 0.3s; }
+
+.jumboText_description {
+  color: #c4dfee; }
+
+.mt1 {
+  margin-top: 1rem; }

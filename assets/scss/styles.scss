@@ -3,9 +3,13 @@ $darkBlue: #001441;
 body,html{
 	padding: 0;
 	margin:0;
+	font-size: 16px;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
+	line-height: 1.4;
 	color: $darkBlue;
+	-webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 
 }
 a{
@@ -13,16 +17,37 @@ a{
 	color: $darkBlue;
 }
 
+
 h1{
-	font-size: 110px;
-	
+	font-size: 7rem;
+	margin: 0;
 	font-family: sans-serif;
 	
 	font-family: 'Oswald', sans-serif;
 	font-weight: 900;
 }
+h3{
+	font-size: 2rem;
+	margin: 0;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+}
+h4{
+	font-weight: 700;
+	font-size: 1.2rem;
+}
+p{
+	margin: 0;
+	font-size: 1rem;
+}
 .jumbo{
-	// position: absolute;
+	position: absolute;
+	z-index: -2;
+}
+.jumboText{
+	height: 100vh;
+	display: flex;
+	align-items: center;
 }
 .jumbo__image{
 	width: 110vw;
@@ -53,6 +78,9 @@ h1{
 	
 	}
 }
+.jumboText_adv{
+	color: $lightBlue;
+}
 
 .headerMenu{
 	position: fixed;
@@ -62,6 +90,7 @@ h1{
 	z-index: 10;
 	padding: 0.5rem 2rem;
 	color: white;
+	transition: 0.3s;
 	a{
 		color: white;
 	}
@@ -75,15 +104,19 @@ h1{
 	}
 	.headerMenu_botRow{
 		padding: 1rem 0;
+		display: flex;
+	align-items: center;
+	justify-content: space-between;
 		a{
-			margin-right: 1rem;
+			margin: 0 1rem;
 			font-weight: 500;
 		}
 	}
 	.headerMenu_menuLink{
-		justify-content: flex-end;
+		margin-right: 1rem;
 	}
 }
+
 .VAcenter{
 	display: flex;
 	align-items: center;
@@ -97,8 +130,32 @@ h1{
 	width: auto;
 	margin-right: 1rem;
 }
+.headerScroll{
+	background-color: $lightBlue;
+	transition: 0.3s;
+	color: $darkBlue;
+	a{
+		color: $darkBlue;
+	}
+	.logoHeaderBlack{
+		opacity: 1;
+		transition: 0.3s;
+	}
+}
 .headerMenu_bot_right{
-	display: flex;
-	align-items: center;
-	justify-content:space-around;
+	position: relative;
+
+}
+.logoHeaderBlack{
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: 0.3s;
+}
+.jumboText_description{
+	color: $lightBlue;
+}
+.mt1{
+	margin-top: 1rem;
 }
