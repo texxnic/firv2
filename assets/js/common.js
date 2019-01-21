@@ -4,27 +4,29 @@ window.onscroll = () => {
   };
 
   var controller = new ScrollMagic.Controller();
+  
   new ScrollMagic.Scene({
       duration: $(window).height(),
       triggerHook: 0,
       
   })
       .setTween(".jumbo_png", { top: '-20%'})
-      .addIndicators()
+      /* .addIndicators() */
       .addTo(controller);
+      /* Прозрачность при скролле */
   new ScrollMagic.Scene({
-      duration: $(window).height(),
+      duration: $(window).height()/2,
       triggerHook: 0,
       
   })
   .setTween(".jumbo", { opacity: 0 })
-      .addIndicators()
+      /* .addIndicators() */
       .addTo(controller);
   $(".jumboText").mousemove(function (e) {
       console.log(e);
-      parallaxIt(e, ".jumbo_png", -60);
+      parallaxIt(e, ".jumbo_png", -30);
       // parallaxIt(e, ".jumboText", -45);
-      parallaxIt(e, ".jumbo__image", -30);
+      parallaxIt(e, ".jumbo__image", -70);
   });
 
   function parallaxIt(e, target, movement) {
