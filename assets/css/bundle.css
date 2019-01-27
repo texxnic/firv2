@@ -2308,6 +2308,411 @@ html {
 }
 
 /*# sourceMappingURL=bootstrap-grid.min.css.map */
+.odometer.odometer-auto-theme,
+.odometer.odometer-theme-default {
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  position: relative;
+}
+
+.odometer.odometer-auto-theme,
+.odometer.odometer-theme-default {
+  *display: inline;
+}
+
+.odometer.odometer-auto-theme .odometer-digit,
+.odometer.odometer-theme-default .odometer-digit {
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  position: relative;
+}
+
+.odometer.odometer-auto-theme .odometer-digit,
+.odometer.odometer-theme-default .odometer-digit {
+  *display: inline;
+}
+
+.odometer.odometer-auto-theme .odometer-digit .odometer-digit-spacer,
+.odometer.odometer-theme-default .odometer-digit .odometer-digit-spacer {
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  visibility: hidden;
+}
+
+.odometer.odometer-auto-theme .odometer-digit .odometer-digit-spacer,
+.odometer.odometer-theme-default .odometer-digit .odometer-digit-spacer {
+  *display: inline;
+}
+
+.odometer.odometer-auto-theme .odometer-digit .odometer-digit-inner,
+.odometer.odometer-theme-default .odometer-digit .odometer-digit-inner {
+  text-align: left;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.odometer.odometer-auto-theme .odometer-digit .odometer-ribbon,
+.odometer.odometer-theme-default .odometer-digit .odometer-ribbon {
+  display: block;
+}
+
+.odometer.odometer-auto-theme .odometer-digit .odometer-ribbon-inner,
+.odometer.odometer-theme-default .odometer-digit .odometer-ribbon-inner {
+  display: block;
+  -webkit-backface-visibility: hidden;
+}
+
+.odometer.odometer-auto-theme .odometer-digit .odometer-value,
+.odometer.odometer-theme-default .odometer-digit .odometer-value {
+  display: block;
+  -webkit-transform: translateZ(0);
+}
+
+.odometer.odometer-auto-theme .odometer-digit .odometer-value.odometer-last-value,
+.odometer.odometer-theme-default .odometer-digit .odometer-value.odometer-last-value {
+  position: absolute;
+}
+
+.odometer.odometer-auto-theme.odometer-animating-up .odometer-ribbon-inner,
+.odometer.odometer-theme-default.odometer-animating-up .odometer-ribbon-inner {
+  -webkit-transition: -webkit-transform 2s;
+  -moz-transition: -moz-transform 2s;
+  -ms-transition: -ms-transform 2s;
+  -o-transition: -o-transform 2s;
+  transition: transform 2s;
+}
+
+.odometer.odometer-auto-theme.odometer-animating-up.odometer-animating .odometer-ribbon-inner,
+.odometer.odometer-theme-default.odometer-animating-up.odometer-animating .odometer-ribbon-inner {
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+.odometer.odometer-auto-theme.odometer-animating-down .odometer-ribbon-inner,
+.odometer.odometer-theme-default.odometer-animating-down .odometer-ribbon-inner {
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+.odometer.odometer-auto-theme.odometer-animating-down.odometer-animating .odometer-ribbon-inner,
+.odometer.odometer-theme-default.odometer-animating-down.odometer-animating .odometer-ribbon-inner {
+  -webkit-transition: -webkit-transform 2s;
+  -moz-transition: -moz-transform 2s;
+  -ms-transition: -ms-transform 2s;
+  -o-transition: -o-transform 2s;
+  transition: transform 2s;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.odometer.odometer-auto-theme .odometer-value,
+.odometer.odometer-theme-default .odometer-value {
+  text-align: center;
+}
+/**
+ * Owl Carousel v2.3.4
+ * Copyright 2013-2018 David Deutsch
+ * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE
+ */
+
+.owl-carousel,
+.owl-carousel .owl-item {
+  -webkit-tap-highlight-color: transparent;
+  position: relative;
+}
+
+.owl-carousel {
+  display: none;
+  width: 100%;
+  z-index: 1;
+}
+
+.owl-carousel .owl-stage {
+  position: relative;
+  -ms-touch-action: pan-Y;
+  touch-action: manipulation;
+  -moz-backface-visibility: hidden;
+}
+
+.owl-carousel .owl-stage:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.owl-carousel .owl-stage-outer {
+  position: relative;
+  overflow: hidden;
+  -webkit-transform: translate3d(0,0,0);
+}
+
+.owl-carousel .owl-item,
+.owl-carousel .owl-wrapper {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+}
+
+.owl-carousel .owl-item {
+  min-height: 1px;
+  float: left;
+  -webkit-backface-visibility: hidden;
+  -webkit-touch-callout: none;
+}
+
+.owl-carousel .owl-item img {
+  display: block;
+  width: 100%;
+}
+
+.owl-carousel .owl-dots.disabled,
+.owl-carousel .owl-nav.disabled {
+  display: none;
+}
+
+.no-js .owl-carousel,
+.owl-carousel.owl-loaded {
+  display: block;
+}
+
+.owl-carousel .owl-dot,
+.owl-carousel .owl-nav .owl-next,
+.owl-carousel .owl-nav .owl-prev {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel button.owl-dot {
+  background: 0 0;
+  color: inherit;
+  border: none;
+  padding: 0!important;
+  font: inherit;
+}
+
+.owl-carousel.owl-loading {
+  opacity: 0;
+  display: block;
+}
+
+.owl-carousel.owl-hidden {
+  opacity: 0;
+}
+
+.owl-carousel.owl-refresh .owl-item {
+  visibility: hidden;
+}
+
+.owl-carousel.owl-drag .owl-item {
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.owl-carousel.owl-grab {
+  cursor: move;
+  cursor: grab;
+}
+
+.owl-carousel.owl-rtl {
+  direction: rtl;
+}
+
+.owl-carousel.owl-rtl .owl-item {
+  float: right;
+}
+
+.owl-carousel .animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.owl-carousel .owl-animated-in {
+  z-index: 0;
+}
+
+.owl-carousel .owl-animated-out {
+  z-index: 1;
+}
+
+.owl-carousel .fadeOut {
+  animation-name: fadeOut;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.owl-height {
+  transition: height .5s ease-in-out;
+}
+
+.owl-carousel .owl-item .owl-lazy {
+  opacity: 0;
+  transition: opacity .4s ease;
+}
+
+.owl-carousel .owl-item .owl-lazy:not([src]),
+.owl-carousel .owl-item .owl-lazy[src^=""] {
+  max-height: 0;
+}
+
+.owl-carousel .owl-item img.owl-lazy {
+  transform-style: preserve-3d;
+}
+
+.owl-carousel .owl-video-wrapper {
+  position: relative;
+  height: 100%;
+  background: #000;
+}
+
+.owl-carousel .owl-video-play-icon {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  left: 50%;
+  top: 50%;
+  margin-left: -40px;
+  margin-top: -40px;
+  background: url("owl.video.play.png") no-repeat;
+  cursor: pointer;
+  z-index: 1;
+  -webkit-backface-visibility: hidden;
+  transition: transform .1s ease;
+}
+
+.owl-carousel .owl-video-play-icon:hover {
+  -ms-transform: scale(1.3,1.3);
+  transform: scale(1.3,1.3);
+}
+
+.owl-carousel .owl-video-playing .owl-video-play-icon,
+.owl-carousel .owl-video-playing .owl-video-tn {
+  display: none;
+}
+
+.owl-carousel .owl-video-tn {
+  opacity: 0;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: opacity .4s ease;
+}
+
+.owl-carousel .owl-video-frame {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+}
+/**
+ * Owl Carousel v2.3.4
+ * Copyright 2013-2018 David Deutsch
+ * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE
+ */
+
+.owl-theme .owl-dots,
+.owl-theme .owl-nav {
+  text-align: center;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.owl-theme .owl-nav {
+  margin-top: 10px;
+}
+
+.owl-theme .owl-nav [class*=owl-] {
+  color: #FFF;
+  font-size: 14px;
+  margin: 5px;
+  padding: 4px 7px;
+  background: #D6D6D6;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+  background: #869791;
+  color: #FFF;
+  text-decoration: none;
+}
+
+.owl-theme .owl-nav .disabled {
+  opacity: .5;
+  cursor: default;
+}
+
+.owl-theme .owl-nav.disabled+.owl-dots {
+  margin-top: 10px;
+}
+
+.owl-theme .owl-dots .owl-dot {
+  display: inline-block;
+  zoom: 1;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  width: 10px;
+  height: 10px;
+  margin: 5px 7px;
+  background: #D6D6D6;
+  display: block;
+  -webkit-backface-visibility: visible;
+  transition: opacity .2s ease;
+  border-radius: 30px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: #869791;
+}
 body,
 html {
   padding: 0;
@@ -2346,6 +2751,11 @@ h4 {
   font-size: 1.2rem;
 }
 
+h5 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
 p {
   margin: 0;
   font-size: 1rem;
@@ -2373,6 +2783,16 @@ p {
 .jumbo_imageW {
   position: relative;
   width: 100vw;
+}
+
+.jumbo__logo {
+  width: 25vw;
+  height: auto;
+  position: absolute;
+  z-index: 2;
+  top: 25%;
+  left: 45%;
+  opacity: 0.3;
 }
 
 .jumbo_png {
@@ -2499,6 +2919,7 @@ p {
   top: 0;
   height: 100%;
   z-index: -1;
+  opacity: 0.7;
 }
 
 .relative {
@@ -2515,6 +2936,8 @@ p {
   font-weight: 300;
   font-size: 13rem;
   margin: 0;
+  line-height: 1;
+  text-align: center;
 }
 
 .infoBlock {
@@ -2531,6 +2954,7 @@ p {
   margin-bottom: 1.8rem;
   border-radius: 0.5rem;
   transition: 0.3s;
+  position: relative;
 }
 
 .services_card:hover {
@@ -2542,16 +2966,16 @@ p {
   color: #fff;
   position: absolute;
   left: 2.5rem;
-  bottom: 1.5rem;
+  bottom: 0rem;
 }
 
 .services_about {
-  background-image: url("../img/aboutBG.jpg");
+  background-image: url("../img/aboutBG2.jpg");
   background-size: cover;
 }
 
 .services_service {
-  background-image: url("../img/servicesCardBG.jpg");
+  background-image: url("../img/servicesCardBG2.jpg");
   background-size: cover;
 }
 
@@ -2575,18 +2999,26 @@ p {
 
 .services_yellow {
   background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  background-image: url("../img/testomCardBg.jpg");
+  background-size: cover;
 }
 
 .services_purple {
   background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+  background-image: url("../img/contactsCardBG.jpg");
+  background-size: cover;
 }
 
 .services_blue {
   background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
+  background-image: url("../img/depCardBg.jpg");
+  background-size: cover;
 }
 
 .services_dark {
   background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+  background-image: url("../img/stockCardBG.jpg");
+  background-size: cover;
 }
 
 .howBecomeClient {
@@ -2604,7 +3036,7 @@ p {
 .howBecomeClient_bubble {
   width: 80%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   position: relative;
   padding: 1rem 1.5rem 2rem 1.5rem;
   margin-bottom: 4rem;
@@ -2613,6 +3045,7 @@ p {
   -webkit-box-shadow: 0px 14px 108px -16px rgba(0, 59, 87, 0.4);
   -moz-box-shadow: 0px 14px 108px -16px rgba(0, 59, 87, 0.4);
   box-shadow: 0px 14px 108px -16px rgba(0, 59, 87, 0.4);
+  align-items: flex-start;
 }
 
 .howBecomeClient_bubble:after {
@@ -2634,6 +3067,20 @@ p {
 .howBecomeClient_bubble:nth-child(even):after {
   left: auto;
   right: 2rem;
+}
+
+.howBecomeClient_bubbleNumber {
+  background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+  color: white;
+  text-align: center;
+  height: 1.5rem;
+  border-radius: 10rem;
+  width: 1.5rem;
+  display: flex;
+  align-items: center;
+  margin-top: 0.3rem;
+  justify-content: center;
+  margin-right: 1rem;
 }
 
 .howBecomeClient_ghostNumber {
@@ -2760,4 +3207,48 @@ footer {
 
 .social li a i:hover {
   color: white;
+}
+
+.owl-carousel h4 {
+  margin: 0;
+}
+
+.firboNews_wrap {
+  -webkit-box-shadow: 0px 14px 108px -16px rgba(0, 59, 87, 0.2);
+  -moz-box-shadow: 0px 14px 108px -16px rgba(0, 59, 87, 0.2);
+  box-shadow: 0px 14px 108px -16px rgba(0, 59, 87, 0.2);
+}
+
+.firboNews_h1 {
+  margin: 0;
+}
+
+.firboNews_date {
+  font-size: 0.8rem;
+}
+
+.tCenter {
+  text-align: center;
+}
+
+.firboNews_row {
+  padding: 0.7rem 2rem;
+  border-bottom: 1px solid #eee;
+}
+
+.firboNews_row:last-of-type {
+  padding-bottom: 1rem;
+  border-bottom: none;
+}
+
+.firboNews_row:first-of-type {
+  padding-top: 1rem;
+}
+
+.firboNews_row__undoaded {
+  filter: blur(4px);
+}
+
+.WOpL {
+  padding-left: 0;
 }

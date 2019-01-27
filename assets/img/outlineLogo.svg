@@ -1,0 +1,15 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 436.1 462.5">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #001441;
+        stroke-miterlimit: 10;
+        stroke-width: 5px;
+      }
+    </style>
+  </defs>
+  <title>Artboard 1</title>
+  <path class="cls-1" d="M130.3,109.4s-78.7,100.1-84.8,108-6.2,17.5-1,24.2L182,416.3H351.7L129.7,134c-5.3-7.1-5.9-17,.6-24.6l52.8-66.9H352.8L214.46,218.6c-8.34,12.57.94,24.2.94,24.2"/>
+  <path class="cls-1" d="M270.7,220a15.94,15.94,0,0,0-.49,20.3l27.48,34.94,86.23-110.54-69.68.06Z"/>
+</svg>

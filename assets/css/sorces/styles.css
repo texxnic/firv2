@@ -30,6 +30,10 @@ h4 {
   font-weight: 700;
   font-size: 1.2rem; }
 
+h5 {
+  font-size: 1rem;
+  font-weight: 700; }
+
 p {
   margin: 0;
   font-size: 1rem; }
@@ -53,6 +57,15 @@ p {
 .jumbo_imageW {
   position: relative;
   width: 100vw; }
+
+.jumbo__logo {
+  width: 25vw;
+  height: auto;
+  position: absolute;
+  z-index: 2;
+  top: 25%;
+  left: 45%;
+  opacity: 0.3; }
 
 .jumbo_png {
   position: absolute;
@@ -147,7 +160,8 @@ p {
   right: 0;
   top: 0;
   height: 100%;
-  z-index: -1; }
+  z-index: -1;
+  opacity: 0.7; }
 
 .relative {
   position: relative; }
@@ -160,7 +174,9 @@ p {
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
   font-size: 13rem;
-  margin: 0; }
+  margin: 0;
+  line-height: 1;
+  text-align: center; }
 
 .infoBlock {
   margin-bottom: 15rem; }
@@ -172,7 +188,8 @@ p {
   height: 15rem;
   margin-bottom: 1.8rem;
   border-radius: 0.5rem;
-  transition: 0.3s; }
+  transition: 0.3s;
+  position: relative; }
   .services_card:hover {
     transform: scale(1.05);
     transition: 0.3s; }
@@ -180,14 +197,14 @@ p {
     color: #fff;
     position: absolute;
     left: 2.5rem;
-    bottom: 1.5rem; }
+    bottom: 0rem; }
 
 .services_about {
-  background-image: url(../img/aboutBG.jpg);
+  background-image: url(../img/aboutBG2.jpg);
   background-size: cover; }
 
 .services_service {
-  background-image: url(../img/servicesCardBG.jpg);
+  background-image: url(../img/servicesCardBG2.jpg);
   background-size: cover; }
 
 .ghost {
@@ -207,16 +224,24 @@ p {
   filter: blur(40px); }
 
 .services_yellow {
-  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%); }
+  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  background-image: url(../img/testomCardBg.jpg);
+  background-size: cover; }
 
 .services_purple {
-  background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%); }
+  background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+  background-image: url(../img/contactsCardBG.jpg);
+  background-size: cover; }
 
 .services_blue {
-  background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%); }
+  background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
+  background-image: url(../img/depCardBg.jpg);
+  background-size: cover; }
 
 .services_dark {
-  background-image: linear-gradient(to top, #09203f 0%, #537895 100%); }
+  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+  background-image: url(../img/stockCardBG.jpg);
+  background-size: cover; }
 
 .howBecomeClient {
   position: relative; }
@@ -228,7 +253,7 @@ p {
 .howBecomeClient_bubble {
   width: 80%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   position: relative;
   padding: 1rem 1.5rem 2rem 1.5rem;
   margin-bottom: 4rem;
@@ -236,7 +261,8 @@ p {
   background-color: #fff;
   -webkit-box-shadow: 0px 14px 108px -16px rgba(0, 59, 87, 0.4);
   -moz-box-shadow: 0px 14px 108px -16px rgba(0, 59, 87, 0.4);
-  box-shadow: 0px 14px 108px -16px rgba(0, 59, 87, 0.4); }
+  box-shadow: 0px 14px 108px -16px rgba(0, 59, 87, 0.4);
+  align-items: flex-start; }
   .howBecomeClient_bubble:after {
     position: absolute;
     content: "";
@@ -252,6 +278,19 @@ p {
     .howBecomeClient_bubble:nth-child(even):after {
       left: auto;
       right: 2rem; }
+
+.howBecomeClient_bubbleNumber {
+  background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+  color: white;
+  text-align: center;
+  height: 1.5rem;
+  border-radius: 10rem;
+  width: 1.5rem;
+  display: flex;
+  align-items: center;
+  margin-top: 0.3rem;
+  justify-content: center;
+  margin-right: 1rem; }
 
 .howBecomeClient_ghostNumber {
   position: absolute;
@@ -357,3 +396,35 @@ footer {
 
 .social li a i:hover {
   color: white; }
+
+.owl-carousel h4 {
+  margin: 0; }
+
+.firboNews_wrap {
+  -webkit-box-shadow: 0px 14px 108px -16px rgba(0, 59, 87, 0.2);
+  -moz-box-shadow: 0px 14px 108px -16px rgba(0, 59, 87, 0.2);
+  box-shadow: 0px 14px 108px -16px rgba(0, 59, 87, 0.2); }
+
+.firboNews_h1 {
+  margin: 0; }
+
+.firboNews_date {
+  font-size: 0.8rem; }
+
+.tCenter {
+  text-align: center; }
+
+.firboNews_row {
+  padding: 0.7rem 2rem;
+  border-bottom: 1px solid #eee; }
+  .firboNews_row:last-of-type {
+    padding-bottom: 1rem;
+    border-bottom: none; }
+  .firboNews_row:first-of-type {
+    padding-top: 1rem; }
+
+.firboNews_row__undoaded {
+  filter: blur(4px); }
+
+.WOpL {
+  padding-left: 0; }
