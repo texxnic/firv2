@@ -26,7 +26,10 @@ gulp.task('cssConcat', function () {
 gulp.task('browser-sync', function() {  
     browserSync.init(["assets/css/bundle.css", "assets/js/*.js"], {
         server: {
-            baseDir: "./"
+            baseDir: "./",
+            serveStaticOptions: {
+                extensions: ['html']
+            }
         }
     });
 });

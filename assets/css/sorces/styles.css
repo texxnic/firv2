@@ -28,7 +28,8 @@ h3 {
 
 h4 {
   font-weight: 700;
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+  margin-top: 0; }
 
 h5 {
   font-size: 1rem;
@@ -36,7 +37,16 @@ h5 {
 
 p {
   margin: 0;
-  font-size: 1rem; }
+  font-size: 1rem;
+  line-height: 1.7; }
+
+ul {
+  line-height: 1.7; }
+  ul li {
+    margin: 0.5rem 0; }
+
+.boldText {
+  font-weight: 700; }
 
 .jumbo {
   position: absolute;
@@ -179,9 +189,12 @@ p {
   text-align: center; }
 
 .infoBlock {
-  margin-bottom: 15rem; }
+  margin-bottom: 9rem; }
   .infoBlock:last-of-type {
     margin-bottom: 0; }
+
+.infoBlock_last {
+  padding-bottom: 3rem; }
 
 .services_card {
   background-color: #c4dfee;
@@ -401,9 +414,10 @@ footer {
   margin: 0; }
 
 .firboNews_wrap {
-  -webkit-box-shadow: 0px 14px 108px -16px rgba(0, 59, 87, 0.2);
-  -moz-box-shadow: 0px 14px 108px -16px rgba(0, 59, 87, 0.2);
-  box-shadow: 0px 14px 108px -16px rgba(0, 59, 87, 0.2); }
+  -webkit-box-shadow: 0px 14px 108px -16px rgba(0, 59, 87, 0.1);
+  -moz-box-shadow: 0px 14px 108px -16px rgba(0, 59, 87, 0.1);
+  box-shadow: 0px 14px 108px -16px rgba(0, 59, 87, 0.1);
+  border: 1px solid #eee; }
 
 .firboNews_h1 {
   margin: 0; }
@@ -415,16 +429,420 @@ footer {
   text-align: center; }
 
 .firboNews_row {
-  padding: 0.7rem 2rem;
-  border-bottom: 1px solid #eee; }
-  .firboNews_row:last-of-type {
-    padding-bottom: 1rem;
-    border-bottom: none; }
-  .firboNews_row:first-of-type {
-    padding-top: 1rem; }
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #eee;
+  transition: 0.3s; }
+  .firboNews_row:hover {
+    background-color: #eee;
+    transform: scale(1.02);
+    transition: 0.3s; }
 
 .firboNews_row__undoaded {
-  filter: blur(4px); }
+  filter: blur(4px);
+  position: relative; }
 
-.WOpL {
-  padding-left: 0; }
+.firbonews_table {
+  padding-left: 0;
+  position: relative; }
+
+.preloaderWrap {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.lds-ripple {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px; }
+
+.lds-ripple div {
+  position: absolute;
+  border: 4px solid #001441;
+  opacity: 1;
+  border-radius: 50%;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite; }
+
+.lds-ripple div:nth-child(2) {
+  animation-delay: -0.5s; }
+
+@keyframes lds-ripple {
+  0% {
+    top: 28px;
+    left: 28px;
+    width: 0;
+    height: 0;
+    opacity: 1; }
+  100% {
+    top: -1px;
+    left: -1px;
+    width: 58px;
+    height: 58px;
+    opacity: 0; } }
+
+.firboNews .row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.firboNews .row > [class*='col-'] {
+  display: flex;
+  flex-direction: column; }
+
+.firboNews_ad {
+  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  background-image: url(../img/newsBG.jpg);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.newsLogo {
+  width: 70%; }
+
+.firboNews_adDesc {
+  color: #fff;
+  text-align: center; }
+
+.headerMenu_homeLink {
+  margin: 0 !important; }
+
+.aboutAdvBubble {
+  text-align: justify;
+  padding: 0.1rem 1.5rem 2rem 1.5rem;
+  margin-top: 2rem; }
+  .aboutAdvBubble p {
+    font-size: 0.8rem; }
+
+.hasShadow {
+  -webkit-box-shadow: 0px 14px 108px -16px rgba(0, 59, 87, 0.2);
+  -moz-box-shadow: 0px 14px 108px -16px rgba(0, 59, 87, 0.2);
+  box-shadow: 0px 14px 108px -16px rgba(0, 59, 87, 0.2); }
+
+.aboutAdvBubble_row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2rem 0; }
+
+.aboutAdvBubble_row > [class*='col-'] {
+  display: flex;
+  flex-direction: column; }
+
+.aboutFullFirst {
+  background: url(../img/servicesBG.jpg);
+  color: white; }
+  .aboutFullFirst i {
+    color: #E81B00; }
+
+.aboutFull {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 8rem 0;
+  text-align: center; }
+
+.note {
+  padding: 3rem;
+  border: 1rem solid #c4dfee;
+  margin-top: 3rem; }
+
+.aboutFirboSlide {
+  height: 100vh; }
+  .aboutFirboSlide h1 {
+    line-height: 1; }
+  .aboutFirboSlide .container {
+    position: sticky;
+    top: calc(50vh - 3rem); }
+  .aboutFirboSlide .aboutFirboSlide_textWrap {
+    position: relative; }
+  .aboutFirboSlide .aboutFirboSlide_letterWrap {
+    display: inline-block;
+    position: relative; }
+  .aboutFirboSlide .aboutFirboSlide_word {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 0.3s;
+    opacity: 0; }
+  .aboutFirboSlide .aboutFirboSlide_letter {
+    transition: 0.3s;
+    opacity: 0.05; }
+  .aboutFirboSlide .aboutFirboSlide_capital {
+    margin-left: 2rem;
+    opacity: 0; }
+  .aboutFirboSlide .aboutFirboSlide__visible {
+    opacity: 1; }
+
+.aboutHistoryFirst {
+  text-align: center;
+  padding: 5rem 3rem 7rem 3rem;
+  border: 1rem solid #c4dfee; }
+
+.aboutHistory_name {
+  position: sticky;
+  top: 13rem; }
+
+.aboutHistory_dottedPattern {
+  position: absolute;
+  top: 0;
+  left: 2rem;
+  width: 70%;
+  z-index: -1; }
+
+.newServicesCarousel_block {
+  display: flex;
+  flex-direction: column-reverse;
+  -webkit-box-shadow: 0px 14px 108px -16px rgba(0, 59, 87, 0.1);
+  -moz-box-shadow: 0px 14px 108px -16px rgba(0, 59, 87, 0.1);
+  box-shadow: 0px 14px 108px -16px rgba(0, 59, 87, 0.1);
+  margin: 0 1rem;
+  height: 15rem;
+  min-width: 17rem;
+  background-color: #fff;
+  position: relative;
+  transition: 0.1s; }
+  .newServicesCarousel_block h4 {
+    position: static;
+    z-index: 3;
+    padding: 1rem;
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(196, 223, 238, 0.48) 100%);
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(196, 223, 238, 0.48) 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(196, 223, 238, 0.48) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#7ac4dfee',GradientType=0 ); }
+  .newServicesCarousel_block:hover {
+    transform: scale(1.1);
+    transition: 0.1s;
+    -webkit-box-shadow: 0px 14px 108px -16px rgba(0, 59, 87, 0.2);
+    -moz-box-shadow: 0px 14px 108px -16px rgba(0, 59, 87, 0.2);
+    box-shadow: 0px 14px 108px -16px rgba(0, 59, 87, 0.2); }
+    .newServicesCarousel_block:hover .newServicesCarousel_blockBG {
+      opacity: 0.5;
+      transition: 0.1s; }
+
+.newServicesCarousel {
+  position: relative;
+  width: 100%;
+  margin-top: -10rem; }
+
+.newServicesCarousel_blockBG {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  opacity: 0.2;
+  transition: 0.1s; }
+
+.innerJumbo {
+  padding-top: 9rem;
+  color: white; }
+  .innerJumbo p {
+    margin-left: 4rem; }
+
+.innerJumbo_introText {
+  position: relative; }
+  .innerJumbo_introText h2, .innerJumbo_introText p {
+    position: relative;
+    z-index: 2; }
+
+.innerJumbo_textDecoration {
+  position: absolute;
+  height: 100%;
+  width: 4rem;
+  top: 0;
+  left: -1rem;
+  background-image: url(../img/mapDottedSquare.svg);
+  background-repeat: repeat;
+  background-size: 35px;
+  z-index: 1;
+  opacity: 0.5; }
+
+.innerJumbo_servicesTypeSelector {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid rgba(196, 223, 238, 0.3);
+  margin-top: 2rem; }
+  .innerJumbo_servicesTypeSelector h5 {
+    margin: 1rem 1rem;
+    opacity: 0.6;
+    cursor: pointer; }
+    .innerJumbo_servicesTypeSelector h5:hover {
+      opacity: 0.9; }
+  .innerJumbo_servicesTypeSelector .selected {
+    position: relative; }
+    .innerJumbo_servicesTypeSelector .selected h5 {
+      opacity: 1; }
+    .innerJumbo_servicesTypeSelector .selected:after {
+      position: absolute;
+      background-color: #fff;
+      content: "";
+      width: 100%;
+      height: 3px;
+      top: 0;
+      left: 0; }
+
+.innerJumbo_services {
+  background-image: url(../img/servicesBG.jpg);
+  background-size: cover;
+  background-position: center center; }
+
+.innerJumbo_contacts {
+  background-image: url(../img/contactsBG.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  padding-bottom: 4rem; }
+
+.newServicesCarousel_blockBG__brok {
+  background-image: url(../img/servicesCards/brok.jpg);
+  background-size: cover; }
+
+.newServicesCarousel_blockBG__uprKap {
+  background-image: url(../img/servicesCards/uprKap.jpg);
+  background-size: cover; }
+
+.newServicesCarousel_blockBG__arenda {
+  background-image: url(../img/servicesCards/arenda.jpg);
+  background-size: cover; }
+
+.newServicesCarousel_blockBG__depozit {
+  background-image: url(../img/servicesCards/depozit.jpg);
+  background-size: cover; }
+
+.newServicesCarousel_blockBG__gold {
+  background-image: url(../img/servicesCards/gold.jpg);
+  background-size: cover; }
+
+.newServicesCarousel_blockBG__buildings {
+  background-image: url(../img/servicesCards/buildings.jpg);
+  background-size: cover; }
+
+.newServicesCarousel_blockBG__teach {
+  background-image: url(../img/servicesCards/teach.jpg);
+  background-size: cover; }
+
+.newServicesCarousel_blockBG__dirInv {
+  background-image: url(../img/servicesCards/dirInv.jpg);
+  background-size: cover; }
+
+.newServicesCarousel_blockBG__forex {
+  background-image: url(../img/servicesCards/forex.jpg);
+  background-size: cover; }
+
+.newServicesCarousel_blockBG__accou {
+  background-image: url(../img/servicesCards/accou.jpg);
+  background-size: cover; }
+
+.grayBlock {
+  background-color: #f5f5f5; }
+
+.newServicesCarousel .owl-stage-outer {
+  padding: 3rem 0; }
+
+.servicesBlock .row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.servicesBlock .row > [class*='col-'] {
+  display: flex;
+  flex-direction: column; }
+
+.servicesBlock_description {
+  padding: 3rem 0; }
+
+.servicesBlock_image {
+  background-size: cover;
+  background-position: center center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transition: 0.3s;
+  z-index: 1; }
+
+.servicesBlock_imageWrap {
+  position: relative; }
+  .servicesBlock_imageWrap:hover .servicesBlock_image {
+    transform: translate(-15px, -15px);
+    -webkit-box-shadow: 0px 14px 108px -16px rgba(0, 59, 87, 0.2);
+    -moz-box-shadow: 0px 14px 108px -16px rgba(0, 59, 87, 0.2);
+    box-shadow: 0px 14px 108px -16px rgba(0, 59, 87, 0.2);
+    transition: 0.3s; }
+  .servicesBlock_imageWrap:hover .servicesBlock_imageDottedPattern {
+    top: 15px;
+    transition: 0.3s;
+    left: 15px; }
+
+.servicesBlock_imageDottedPattern {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  content: "";
+  background-image: url(../img/mapDottedSquare.svg);
+  background-repeat: repeat;
+  background-size: 35px;
+  z-index: -1;
+  transition: 0.3s; }
+
+.servicesBlock_image__brok {
+  background-image: url(../img/servicesCards/brok.jpg); }
+
+.servicesBlock_image__depozit {
+  background-image: url(../img/servicesCards/depozit.jpg); }
+
+.servicesBlock_image__investor {
+  background-image: url(../img/servicesCards/investor.jpg); }
+
+.servicesBlock_image__credit {
+  background-image: url(../img/servicesCards/credit.jpg); }
+
+.servicesBlock_image__individualServ {
+  background-image: url(../img/servicesCards/individual.jpg); }
+
+.servicesBlock_image__entityServ {
+  background-image: url(../img/servicesCards/entity.jpg); }
+
+.servicesBlock_image__building {
+  background-image: url(../img/servicesCards/building.jpg);
+  background-position: center bottom; }
+
+.servicesBlock_image__startupServ {
+  background-image: url(../img/servicesCards/startupServ.jpg); }
+
+.servicesBlock_image__governmentServ {
+  background-image: url(../img/servicesCards/governmentServ.jpg); }
+
+.servicesBlock_image__accou {
+  background-image: url(../img/servicesCards/accou.jpg); }
+
+.servicesBlock_image__lawyerServ {
+  background-image: url(../img/servicesCards/lawyerServ.jpg); }
+
+.servicesBlock_image__consultServ {
+  background-image: url(../img/servicesCards/consultServ.jpg); }
+
+.servicesBlock_image__insuranceServ {
+  background-image: url(../img/servicesCards/insuranceServ.jpg); }
+
+.servicesBlock_image__conciergeServ {
+  background-image: url(../img/servicesCards/conciergeServ.jpg); }
+
+.servicesBlock_image__buildings {
+  background-image: url(../img/servicesCards/buildings.jpg); }
+
+.servicesBlock_image__charity {
+  background-image: url(../img/servicesCards/charity.jpg); }
+
+.servicesBlock {
+  margin: 10rem; }
