@@ -16,15 +16,17 @@
     <div class="headerMenu">
     <div class="container-fluid">
         <div class="col-md-12 headerMenu_topRow">
-            <a href="">Частным клиентам</a>
-            <a href="">Корпоративным клиентам</a>
-            <a href="" class="fRight">8 800 234-44-11</a>
+            <div class="headerMenu_serviceType">
+                <a href="/uslugi#personal" class="headerMenu_servicesType">Частным клиентам</a>
+                <a href="/uslugi#corp" class="headerMenu_servicesType">Корпоративным клиентам</a>
+            </div>
+            <a href="">8 800 234-44-11</a>
         </div>
         <div class="col-md-12 headerMenu_botRow">
             <div class="headerMenu_bot_right VAcenter">
                 <a href="./" class="headerMenu_homeLink">
-                        <img src="assets/img/whiteFirboLogo.svg" class="logoHeader" alt="">
-                        <img src="assets/img/blackFirboLogo.svg" class="logoHeader logoHeaderBlack" alt="">
+                    <img src="assets/img/whiteFirboLogo.svg" class="logoHeader" alt="">
+                    <img src="assets/img/blackFirboLogo.svg" class="logoHeader logoHeaderBlack" alt="">
                 </a>
                 <nav class="headerMenu_mainLinks VAcenter">
                     <a href="/uslugi">Услуги</a>
@@ -41,17 +43,25 @@
         <div class="col-md-12"></div>
     </div>
 </div>
+<script>
+    $('.headerMenu_menuLink').click(function(){
+        $('.headerMenu').toggleClass('headerMenu__activated');
+        if(!$('.headerMenu').hasClass('headerScroll')){
+            $('.headerMenu').addClass('headerScroll');
+        }
+    });
+</script>
 
     <div class="pageContent">
         <div class="innerJumbo innerJumbo_services">
             <div class="container">
                 <div class="col-md-8">
-                    <div class="innerJumbo_introText">
+                    <div class="innerJumbo_introText borderedDiv">
                         <h2>Услуги</h2>
                         <p>Компания фирбо капитал предлагает широкий спектр высококачественных услуг для физических и
                             юридических лиц, сочитающие в себе российский и международный опыт инвестиционного бизнеса,
                             чтобы принести максимальный доход и стать лидером в портфельном управлении.</p>
-                        <div class="innerJumbo_textDecoration"></div>
+
                     </div>
                 </div>
             </div>
@@ -64,326 +74,382 @@
                 </div>
             </div>
         </div>
-        <div class="servicesBlock infoBlock">
-            <div class="container">
-                <div class="col-md-10">
-                    <div class="row justify-content-around">
+        <div class="servicesBlock infoBlock infoBlock_last">
+            <div class="owl-carousel">
+                <div class="container">
+                    <div class="row servicesBlock_item  justify-content-around">
                         <div class="col-md-3 servicesBlock_imageWrap">
                             <div class="servicesBlock_image servicesBlock_image__brok"></div>
                             <div class="servicesBlock_imageDottedPattern"></div>
                         </div>
                         <div class="col-md-7 servicesBlock_description">
-                            <h4>Брокерские услуги</h4>
-                            <p>Компания фирбо капитал предлагает широкий спектр высококачественных услуг для физических
-                                и
-                                юридических лиц, сочитающие в себе российский и международный опыт инвестиционного
-                                бизнеса,
-                                чтобы принести максимальный доход и стать лидером в портфельном управлении.</p>
+                            <h3>Брокерские услуги</h3>
+                            <p>Инвестирование в ценные бумаги, по-прежнему остается одним из наиболее эффективных
+                                вариантов вложения средств, предусматривающих высокую ликвидность портфеля. Брокерское
+                                обслуживание от Фирбо Капитал, это полный пакет услуг, гарантирующий сопровождение и
+                                оформление всех сопутствующих сделок на главных торговых площадках мира. </p>
+                            <div class="servicesBlock_types">
+                                <div class="servicesBlock_type">Биржевой Депозит</div>
+                                <div class="servicesBlock_type">IPO/SPO</div>
+                                <div class="servicesBlock_type">Структурный продукт</div>
+                                <div class="servicesBlock_type">Форекс</div>
+                                <div class="servicesBlock_type">Личный консультант</div>
+                                <div class="servicesBlock_type actionButton">Узнать больше<i
+                                        class="fas fa-arrow-circle-right"></i></div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="servicesBlock infoBlock">
-            <div class="container">
-                <div class="col-md-10">
-                    <div class="row justify-content-around">
+                    <div class="row servicesBlock_item  justify-content-around">
                         <div class="col-md-3 servicesBlock_imageWrap">
                             <div class="servicesBlock_image servicesBlock_image__depozit"></div>
                             <div class="servicesBlock_imageDottedPattern"></div>
                         </div>
                         <div class="col-md-7 servicesBlock_description">
-                            <h4>Инвестировать деньги</h4>
-                            <p>Компания фирбо капитал предлагает широкий спектр высококачественных услуг для физических
-                                и
-                                юридических лиц, сочитающие в себе российский и международный опыт инвестиционного
-                                бизнеса,
-                                чтобы принести максимальный доход и стать лидером в портфельном управлении.</p>
+                            <h3>Инвестировать деньги</h3>
+                            <p>Выражение «деньги должны работать», знакомо многим, и большинство из них уже давно
+                                научились приумножать средства различными способами. На помощь в этом деле, приходит
+                                инвестиционная компания Фирбо Капитал, где вопрос стоит только за тем, какому виду
+                                вложения отдать предпочтение. </p>
+                            <div class="servicesBlock_types">
+
+                                <div class="servicesBlock_type">Проектный депозит</div>
+                                <div class="servicesBlock_type">Драгоценные металлы</div>
+                                <div class="servicesBlock_type actionButton">Узнать больше<i
+                                        class="fas fa-arrow-circle-right"></i></div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="servicesBlock infoBlock">
-            <div class="container">
-                <div class="col-md-10">
-                    <div class="row justify-content-around">
-                        <div class="col-md-3 servicesBlock_imageWrap">
-                            <div class="servicesBlock_image servicesBlock_image__investor"></div>
-                            <div class="servicesBlock_imageDottedPattern"></div>
-                        </div>
-                        <div class="col-md-7 servicesBlock_description">
-                            <h4>Поиск инвестора</h4>
-                            <p>Компания фирбо капитал предлагает широкий спектр высококачественных услуг для физических
-                                и
-                                юридических лиц, сочитающие в себе российский и международный опыт инвестиционного
-                                бизнеса,
-                                чтобы принести максимальный доход и стать лидером в портфельном управлении.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="servicesBlock infoBlock">
-            <div class="container">
-                <div class="col-md-10">
-                    <div class="row justify-content-around">
+
+                    <div class="row servicesBlock_item  justify-content-around">
                         <div class="col-md-3 servicesBlock_imageWrap">
                             <div class="servicesBlock_image servicesBlock_image__credit"></div>
                             <div class="servicesBlock_imageDottedPattern"></div>
                         </div>
                         <div class="col-md-7 servicesBlock_description">
-                            <h4>Кредит от Фирбо Капитал</h4>
-                            <p>Компания фирбо капитал предлагает широкий спектр высококачественных услуг для физических
-                                и
-                                юридических лиц, сочитающие в себе российский и международный опыт инвестиционного
-                                бизнеса,
-                                чтобы принести максимальный доход и стать лидером в портфельном управлении.</p>
+                            <h3>Кредит от Фирбо Капитал</h3>
+                            <p>Инвестиционная компания Фирбо Капитал гарантирует своим клиентам полное или частичное (по
+                                желанию заёмщика) юридическое сопровождение сделки, согласно установленным на территории
+                                Российской Федерации стандартам на момент оформления договора.</p>
+                            <div class="servicesBlock_types">
+
+
+                                <div class="servicesBlock_type actionButton">Узнать больше<i
+                                        class="fas fa-arrow-circle-right"></i></div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="servicesBlock infoBlock">
-            <div class="container">
-                <div class="col-md-10">
-                    <div class="row justify-content-around">
+                    <div class="row servicesBlock_item  justify-content-around">
                         <div class="col-md-3 servicesBlock_imageWrap">
                             <div class="servicesBlock_image servicesBlock_image__individualServ"></div>
                             <div class="servicesBlock_imageDottedPattern"></div>
                         </div>
                         <div class="col-md-7 servicesBlock_description">
-                            <h4>Различные услуги для частных лиц</h4>
-                            <p>Компания фирбо капитал предлагает широкий спектр высококачественных услуг для физических
-                                и
-                                юридических лиц, сочитающие в себе российский и международный опыт инвестиционного
-                                бизнеса,
-                                чтобы принести максимальный доход и стать лидером в портфельном управлении.</p>
+                            <h3>Различные услуги для частных лиц</h3>
+                            <p>Среди предложенных компанией услуг, каждый сможет найти себе что-то по душе: аудиторские
+                                и бухгалтерские услуги; управление капиталом; аренда ценных бумаг; брокерское
+                                обслуживание; недвижимость; прямые инвестиции; Форекс, и многое другое. </p>
+                            <div class="servicesBlock_types">
+
+
+                                <div class="servicesBlock_type">Банкротство физ. лиц</div>
+                                <div class="servicesBlock_type actionButton">Узнать больше<i
+                                        class="fas fa-arrow-circle-right"></i></div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="servicesBlock infoBlock">
-            <div class="container">
-                <div class="col-md-10">
-                    <div class="row justify-content-around">
-                        <div class="col-md-3 servicesBlock_imageWrap">
-                            <div class="servicesBlock_image servicesBlock_image__entityServ"></div>
-                            <div class="servicesBlock_imageDottedPattern"></div>
-                        </div>
-                        <div class="col-md-7 servicesBlock_description">
-                            <h4>Различные услуги для юридических лиц</h4>
-                            <p>Компания фирбо капитал предлагает широкий спектр высококачественных услуг для физических
-                                и
-                                юридических лиц, сочитающие в себе российский и международный опыт инвестиционного
-                                бизнеса,
-                                чтобы принести максимальный доход и стать лидером в портфельном управлении.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="servicesBlock infoBlock">
-            <div class="container">
-                <div class="col-md-10">
-                    <div class="row justify-content-around">
+
+                    <div class="row servicesBlock_item  justify-content-around">
                         <div class="col-md-3 servicesBlock_imageWrap">
                             <div class="servicesBlock_image servicesBlock_image__building"></div>
                             <div class="servicesBlock_imageDottedPattern"></div>
                         </div>
                         <div class="col-md-7 servicesBlock_description">
-                            <h4>Строительство</h4>
-                            <p>Компания фирбо капитал предлагает широкий спектр высококачественных услуг для физических
-                                и
-                                юридических лиц, сочитающие в себе российский и международный опыт инвестиционного
-                                бизнеса,
-                                чтобы принести максимальный доход и стать лидером в портфельном управлении.</p>
+                            <h3>Строительство</h3>
+                            <p>За плечами множество и собственных строительных объектов, благодаря чему удаётся снизить
+                                цены на жильё на 20-25% по сравнению с рыночными тарифами. Когда к нам обращаются по
+                                вопросам строительства и покупки жилых площадей, наши специалисты всегда делают ударение
+                                на комплексных услугах, которые включают в себя не только сам договор купли-продажи, но
+                                и управление данным недвижимым активом.</p>
+                            <div class="servicesBlock_types">
+
+                                <div class="servicesBlock_type actionButton">Узнать больше<i
+                                        class="fas fa-arrow-circle-right"></i></div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="servicesBlock infoBlock">
-            <div class="container">
-                <div class="col-md-10">
-                    <div class="row justify-content-around">
+                    <div class="row servicesBlock_item  justify-content-around">
                         <div class="col-md-3 servicesBlock_imageWrap">
                             <div class="servicesBlock_image servicesBlock_image__startupServ"></div>
                             <div class="servicesBlock_imageDottedPattern"></div>
                         </div>
                         <div class="col-md-7 servicesBlock_description">
-                            <h4>Стартапы</h4>
-                            <p>Компания фирбо капитал предлагает широкий спектр высококачественных услуг для физических
-                                и
-                                юридических лиц, сочитающие в себе российский и международный опыт инвестиционного
-                                бизнеса,
-                                чтобы принести максимальный доход и стать лидером в портфельном управлении.</p>
+                            <h3>Стартапы</h3>
+                            <p>Наша компания уже несколько десятилетий предлагает своим клиентам инвестировать в
+                                стартапы на выгодных условиях, и сроком от 3 до 8 лет. За это время наши аналитики
+                                приобрели и продали свыше 700 проектов, что принесло нашим клиентам миллионы долларов,
+                                сделав их богатыми и успешными. </p>
+                            <div class="servicesBlock_types">
+
+                                <div class="servicesBlock_type">Продажа стартапов</div>
+                                <div class="servicesBlock_type">Поиск инвестора</div>
+                                <div class="servicesBlock_type actionButton">Узнать больше<i
+                                        class="fas fa-arrow-circle-right"></i></div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="servicesBlock infoBlock">
-            <div class="container">
-                <div class="col-md-10">
-                    <div class="row justify-content-around">
+                    <div class="row servicesBlock_item  justify-content-around">
                         <div class="col-md-3 servicesBlock_imageWrap">
                             <div class="servicesBlock_image servicesBlock_image__governmentServ"></div>
                             <div class="servicesBlock_imageDottedPattern"></div>
                         </div>
                         <div class="col-md-7 servicesBlock_description">
-                            <h4>Государственные тендеры</h4>
-                            <p>Компания фирбо капитал предлагает широкий спектр высококачественных услуг для физических
-                                и
-                                юридических лиц, сочитающие в себе российский и международный опыт инвестиционного
-                                бизнеса,
-                                чтобы принести максимальный доход и стать лидером в портфельном управлении.</p>
+                            <h3>Государственные тендеры</h3>
+                            <p>Наша компания сотрудничает со многими государственными и частными структурами, которые
+                                выступают организаторами различных тендеров. Участником программы может стать любой
+                                желающий, который способен выполнить возложенные на себя обязательства. </p>
+                            <div class="servicesBlock_types">
+
+                                <div class="servicesBlock_type">Закупка товара</div>
+                                <div class="servicesBlock_type">Оказание услуг</div>
+                                <div class="servicesBlock_type actionButton">Узнать больше<i
+                                        class="fas fa-arrow-circle-right"></i></div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="servicesBlock infoBlock">
-            <div class="container">
-                <div class="col-md-10">
-                    <div class="row justify-content-around">
-                        <div class="col-md-3 servicesBlock_imageWrap">
-                            <div class="servicesBlock_image servicesBlock_image__accou"></div>
-                            <div class="servicesBlock_imageDottedPattern"></div>
-                        </div>
-                        <div class="col-md-7 servicesBlock_description">
-                            <h4>Бухгалтерский аудит</h4>
-                            <p>Компания фирбо капитал предлагает широкий спектр высококачественных услуг для физических
-                                и
-                                юридических лиц, сочитающие в себе российский и международный опыт инвестиционного
-                                бизнеса,
-                                чтобы принести максимальный доход и стать лидером в портфельном управлении.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="servicesBlock infoBlock">
-            <div class="container">
-                <div class="col-md-10">
-                    <div class="row justify-content-around">
-                        <div class="col-md-3 servicesBlock_imageWrap">
-                            <div class="servicesBlock_image servicesBlock_image__lawyerServ"></div>
-                            <div class="servicesBlock_imageDottedPattern"></div>
-                        </div>
-                        <div class="col-md-7 servicesBlock_description">
-                            <h4>Юридические услуги</h4>
-                            <p>Компания фирбо капитал предлагает широкий спектр высококачественных услуг для физических
-                                и
-                                юридических лиц, сочитающие в себе российский и международный опыт инвестиционного
-                                бизнеса,
-                                чтобы принести максимальный доход и стать лидером в портфельном управлении.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="servicesBlock infoBlock">
-            <div class="container">
-                <div class="col-md-10">
-                    <div class="row justify-content-around">
-                        <div class="col-md-3 servicesBlock_imageWrap">
-                            <div class="servicesBlock_image servicesBlock_image__consultServ"></div>
-                            <div class="servicesBlock_imageDottedPattern"></div>
-                        </div>
-                        <div class="col-md-7 servicesBlock_description">
-                            <h4>Консалтинговые услуги</h4>
-                            <p>Компания фирбо капитал предлагает широкий спектр высококачественных услуг для физических
-                                и
-                                юридических лиц, сочитающие в себе российский и международный опыт инвестиционного
-                                бизнеса,
-                                чтобы принести максимальный доход и стать лидером в портфельном управлении.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="servicesBlock infoBlock">
-            <div class="container">
-                <div class="col-md-10">
-                    <div class="row justify-content-around">
+
+
+
+                    <div class="row servicesBlock_item  justify-content-around">
                         <div class="col-md-3 servicesBlock_imageWrap">
                             <div class="servicesBlock_image servicesBlock_image__insuranceServ"></div>
                             <div class="servicesBlock_imageDottedPattern"></div>
                         </div>
                         <div class="col-md-7 servicesBlock_description">
-                            <h4>Страховые услуги</h4>
-                            <p>Компания фирбо капитал предлагает широкий спектр высококачественных услуг для физических
-                                и
-                                юридических лиц, сочитающие в себе российский и международный опыт инвестиционного
-                                бизнеса,
-                                чтобы принести максимальный доход и стать лидером в портфельном управлении.</p>
+                            <h3>Страховые услуги</h3>
+                            <p>С необходимостью воспользоваться услугами страховых компаний может столкнуться любой
+                                желающий оградить себя от больших инвестиционных или иных рисков. Сторона страхователя
+                                передает капитал фонда, размещая его в форме активов. </p>
+                            <div class="servicesBlock_types">
+                                <div class="servicesBlock_type actionButton">Узнать больше<i
+                                        class="fas fa-arrow-circle-right"></i></div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="servicesBlock infoBlock">
-            <div class="container">
-                <div class="col-md-10">
-                    <div class="row justify-content-around">
+                    <div class="row servicesBlock_item  justify-content-around">
                         <div class="col-md-3 servicesBlock_imageWrap">
                             <div class="servicesBlock_image servicesBlock_image__conciergeServ"></div>
                             <div class="servicesBlock_imageDottedPattern"></div>
                         </div>
                         <div class="col-md-7 servicesBlock_description">
-                            <h4>Консьерж сервис</h4>
-                            <p>Компания фирбо капитал предлагает широкий спектр высококачественных услуг для физических
-                                и
-                                юридических лиц, сочитающие в себе российский и международный опыт инвестиционного
-                                бизнеса,
-                                чтобы принести максимальный доход и стать лидером в портфельном управлении.</p>
+                            <h3>Консьерж сервис</h3>
+                            <p>В отдельных случаях подобная услуга может быть доступна только отдельному перечню карт,
+                                чьи держатели по собственному усмотрению могут воспользоваться рядом привилегий. К ним
+                                можно отнести: бронирование номеров в гостиницах, билетов, столиков в ресторане, или
+                                иную конфиденциальную информацию о запрашиваемой организации. </p>
+                            <div class="servicesBlock_types">
+                                <div class="servicesBlock_type actionButton">Узнать больше<i
+                                        class="fas fa-arrow-circle-right"></i></div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="servicesBlock infoBlock">
-            <div class="container">
-                <div class="col-md-10">
-                    <div class="row justify-content-around">
+                    <div class="row servicesBlock_item  justify-content-around">
                         <div class="col-md-3 servicesBlock_imageWrap">
                             <div class="servicesBlock_image servicesBlock_image__buildings"></div>
                             <div class="servicesBlock_imageDottedPattern"></div>
                         </div>
                         <div class="col-md-7 servicesBlock_description">
-                            <h4>Недвижимость</h4>
-                            <p>Компания фирбо капитал предлагает широкий спектр высококачественных услуг для физических
-                                и
-                                юридических лиц, сочитающие в себе российский и международный опыт инвестиционного
-                                бизнеса,
-                                чтобы принести максимальный доход и стать лидером в портфельном управлении.</p>
+                            <h3>Недвижимость</h3>
+                            <p>Наша компания поможет продать или найти недвижимость для вас или вашего бизнеса. Лучшие
+                                офисы, дома и квартиры с помощью Фирбо капитал становятся чуточку ближе. Сопровождение
+                                сделок, поиск недвижимости, сопровождение сделок и нежвижимость от компании Фирбо
+                                капитал.</p>
+                            <div class="servicesBlock_types">
+                                <div class="servicesBlock_type">Снять/сдать</div>
+                                <div class="servicesBlock_type">Купить/продать</div>
+                                <div class="servicesBlock_type">Коммерческая недвижимость</div>
+                                <div class="servicesBlock_type">Таунхаусы в крыму</div>
+
+                                <div class="servicesBlock_type actionButton">Узнать больше<i
+                                        class="fas fa-arrow-circle-right"></i></div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="servicesBlock infoBlock infoBlock_last">
-            <div class="container">
-                <div class="col-md-10">
-                    <div class="row justify-content-around">
+                    <div class="row servicesBlock_item  justify-content-around">
                         <div class="col-md-3 servicesBlock_imageWrap">
                             <div class="servicesBlock_image servicesBlock_image__charity"></div>
                             <div class="servicesBlock_imageDottedPattern"></div>
                         </div>
                         <div class="col-md-7 servicesBlock_description">
-                            <h4>Благотворительность</h4>
-                            <p>Компания фирбо капитал предлагает широкий спектр высококачественных услуг для физических
+                            <h3>Благотворительность</h3>
+                            <p>!!!!!!!!!Компания фирбо капитал предлагает широкий спектр высококачественных услуг для
+                                физических
                                 и
                                 юридических лиц, сочитающие в себе российский и международный опыт инвестиционного
                                 бизнеса,
                                 чтобы принести максимальный доход и стать лидером в портфельном управлении.</p>
+                            <div class="servicesBlock_types">
+                                <div class="servicesBlock_type actionButton">Узнать больше<i
+                                        class="fas fa-arrow-circle-right"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row servicesBlock_item  justify-content-around">
+                        <div class="col-md-3 servicesBlock_imageWrap">
+                            <div class="servicesBlock_image servicesBlock_image__investor"></div>
+                            <div class="servicesBlock_imageDottedPattern"></div>
+                        </div>
+                        <div class="col-md-7 servicesBlock_description">
+                            <h3>Поиск инвестора</h3>
+                            <p>Идейные стартаперы постоянно в поисках ответа на вопрос: «где взять деньги?». Сегодня
+                                подобные ответы могут дать сотрудники Фирбо Капитал, которые на протяжении всего пути
+                                становления будут давать профессиональные консультации, помогут с поиском инвестора для
+                                Вашего бизнеса, и даже смогут обучить всем азам успешного трейдинга благодаря программе
+                                Индивидуального обучения.</p>
+                            <div class="servicesBlock_types">
+
+                                <div class="servicesBlock_type">Коллективные инвестиции </div>
+                                <div class="servicesBlock_type">Краудфандинг </div>
+                                <div class="servicesBlock_type actionButton">Узнать больше<i
+                                        class="fas fa-arrow-circle-right"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row servicesBlock_item  justify-content-around">
+                        <div class="col-md-3 servicesBlock_imageWrap">
+                            <div class="servicesBlock_image servicesBlock_image__entityServ"></div>
+                            <div class="servicesBlock_imageDottedPattern"></div>
+                        </div>
+                        <div class="col-md-7 servicesBlock_description">
+                            <h3>Различные услуги для юридических лиц</h3>
+                            <p>Любое юридическое лицо, обратившееся в Фирбо Капитал по вопросам юриспруденции, может
+                                рассчитывать на правовую поддержку, включающую консультации, урегулирование различного
+                                характера споров (правовая часть), актуализации бизнеса и его приобретение, а также
+                                поиск разумного решения возникшей проблемы в рамках действующего законодательства
+                                страны.</p>
+                            <div class="servicesBlock_types">
+                                <div class="servicesBlock_type">Управление бизнесом </div>
+                                <div class="servicesBlock_type">Лизинг</div>
+                                <div class="servicesBlock_type">Коллекторские услуги </div>
+                                <div class="servicesBlock_type actionButton">Узнать больше<i
+                                        class="fas fa-arrow-circle-right"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row servicesBlock_item  justify-content-around">
+                        <div class="col-md-3 servicesBlock_imageWrap">
+                            <div class="servicesBlock_image servicesBlock_image__startupServ"></div>
+                            <div class="servicesBlock_imageDottedPattern"></div>
+                        </div>
+                        <div class="col-md-7 servicesBlock_description">
+                            <h3>Стартапы</h3>
+                            <p>Наша компания уже несколько десятилетий предлагает своим клиентам инвестировать в
+                                стартапы на выгодных условиях, и сроком от 3 до 8 лет. За это время наши аналитики
+                                приобрели и продали свыше 700 проектов, что принесло нашим клиентам миллионы долларов,
+                                сделав их богатыми и успешными. </p>
+                            <div class="servicesBlock_types">
+
+                                <div class="servicesBlock_type">Продажа стартапов</div>
+                                <div class="servicesBlock_type">Поиск инвестора</div>
+                                <div class="servicesBlock_type actionButton">Узнать больше<i
+                                        class="fas fa-arrow-circle-right"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row servicesBlock_item  justify-content-around">
+                        <div class="col-md-3 servicesBlock_imageWrap">
+                            <div class="servicesBlock_image servicesBlock_image__governmentServ"></div>
+                            <div class="servicesBlock_imageDottedPattern"></div>
+                        </div>
+                        <div class="col-md-7 servicesBlock_description">
+                            <h3>Государственные тендеры</h3>
+                            <p>Наша компания сотрудничает со многими государственными и частными структурами, которые
+                                выступают организаторами различных тендеров. Участником программы может стать любой
+                                желающий, который способен выполнить возложенные на себя обязательства. </p>
+                            <div class="servicesBlock_types">
+
+                                <div class="servicesBlock_type">Закупка товара</div>
+                                <div class="servicesBlock_type">Оказание услуг</div>
+                                <div class="servicesBlock_type actionButton">Узнать больше<i
+                                        class="fas fa-arrow-circle-right"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row servicesBlock_item  justify-content-around">
+                        <div class="col-md-3 servicesBlock_imageWrap">
+                            <div class="servicesBlock_image servicesBlock_image__consultServ"></div>
+                            <div class="servicesBlock_imageDottedPattern"></div>
+                        </div>
+                        <div class="col-md-7 servicesBlock_description">
+                            <h3>Консалтинговые услуги</h3>
+                            <p>Испытываете трудности в развитии бизнеса, или возникли проблемы по части выполнения управленческих задач? Наши специалисты выполнят целый комплекс консалтинговых услуг по устранению возникших сложностей в работе Вашего бизнеса. Штат сотрудников Фирбо Капитал обладает большим опытом сотрудничества с другими организациями, где ежедневно решаются десятки аналогичных задач.</p>
+                            <div class="servicesBlock_types">
+                                <div class="servicesBlock_type">Реклама и PR</div>
+                                <div class="servicesBlock_type">Кадровые услуги</div>
+                                <div class="servicesBlock_type actionButton">Узнать больше<i
+                                        class="fas fa-arrow-circle-right"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row servicesBlock_item  justify-content-around">
+                        <div class="col-md-3 servicesBlock_imageWrap">
+                            <div class="servicesBlock_image servicesBlock_image__accou"></div>
+                            <div class="servicesBlock_imageDottedPattern"></div>
+                        </div>
+                        <div class="col-md-7 servicesBlock_description">
+                            <h3>Бухгалтерский учет</h3>
+                            <p>Бухгалтерский учёт является неотъемлемой – неотъемлемая часть бизнеса, которая больше известна под упорядоченной системой сбора и оформления информации, касательно материального положения (имущественного) компании. </p>
+                            <div class="servicesBlock_types">
+                                <div class="servicesBlock_type">Сопровождение бизнеса</div>
+                                <div class="servicesBlock_type actionButton">Узнать больше<i
+                                        class="fas fa-arrow-circle-right"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row servicesBlock_item  justify-content-around">
+                        <div class="col-md-3 servicesBlock_imageWrap">
+                            <div class="servicesBlock_image servicesBlock_image__lawyerServ"></div>
+                            <div class="servicesBlock_imageDottedPattern"></div>
+                        </div>
+                        <div class="col-md-7 servicesBlock_description">
+                            <h3>Юридические услуги</h3>
+                            <p>Юристы Фирбо Капитал имеют богатый опыт проведения комплекса юридического аудита предприятий, решения различного характера вопросов, которые могут возникать в процессе производственной деятельности, сопряженной с инвестиционными сделками, ценными активами, и юридическим аудитом. </p>
+                            <div class="servicesBlock_types">
+                                <div class="servicesBlock_type">Готовые управляющие компании</div>
+                                <div class="servicesBlock_type">Покупка/продажа банка</div>
+                                <div class="servicesBlock_type">Лицензии ЦБ</div>
+                                <div class="servicesBlock_type">Готовые компании</div>
+                                <div class="servicesBlock_type">Слияние/поглощение</div>
+                                <div class="servicesBlock_type">Регистрация/ликвидация юр. лиц</div>
+                                <div class="servicesBlock_type actionButton">Узнать больше<i
+                                        class="fas fa-arrow-circle-right"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row servicesBlock_item  justify-content-around">
+                        <div class="col-md-3 servicesBlock_imageWrap">
+                            <div class="servicesBlock_image servicesBlock_image__buildings"></div>
+                            <div class="servicesBlock_imageDottedPattern"></div>
+                        </div>
+                        <div class="col-md-7 servicesBlock_description">
+                            <h3>Недвижимость</h3>
+                            <p>Наша компания поможет продать или найти недвижимость для вас или вашего бизнеса. Лучшие офисы, дома и квартиры с помощью Фирбо капитал становятся чуточку ближе. Сопровождение сделок, поиск недвижимости, сопровождение сделок и нежвижимость от компании Фирбо капитал.</p>
+                            <div class="servicesBlock_types">
+                                <div class="servicesBlock_type">Снять/сдать</div>
+                                <div class="servicesBlock_type">Купить/продать</div>
+                                <div class="servicesBlock_type">Коммерческая недвижимость</div>
+                                <div class="servicesBlock_type">Таунхаусы в крыму</div>
+
+                                <div class="servicesBlock_type actionButton">Узнать больше<i
+                                        class="fas fa-arrow-circle-right"></i></div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
 
         <!-- <div class="aboutFull aboutFullFirst infoBlock">
             <div class="container">
@@ -399,6 +465,7 @@
 
 
     </div>
+
 
     <footer id="footer">
 
@@ -458,7 +525,55 @@
     <script src="assets/js/uslugi.js"></script>
 
     <script src="assets/js/moment-with-locales.js"></script>
+    <script>
+        
+        $(document).ready(function () {
+            
+            var owl = $('.owl-carousel');
+            var serviceTypeSelector = $(".innerJumbo_serviceType");
+            owl.owlCarousel({
+                nav: false,
+                items: 1,
+                touchDrag: false,
+                mouseDrag: false,
+            });
 
+            serviceTypeSelector.click(function () {
+                
+                if (this == serviceTypeSelector[0]) {
+                    window.location.hash = "#personal";
+                    
+                } else {
+                    window.location.hash = "#corp";
+                    
+                }
+            });
+            if(window.location.hash){
+                changeServiceType(window.location.hash);
+            }
+            $(window).on('hashchange', function() {
+                changeServiceType(window.location.hash);
+            });
+
+            function changeServiceType(hash) {
+                if(hash == "#personal"){
+                    serviceTypeSelector.removeClass("selected");
+                    serviceTypeSelector.eq(0).addClass("selected");
+                    $(".innerJumbo_services").removeClass("innerJumbo_services__corp");
+                    owl.trigger('to.owl.carousel', 0);
+                    
+                } else if (hash == "#corp"){
+                    serviceTypeSelector.removeClass("selected");
+                    serviceTypeSelector.eq(1).addClass("selected");
+                    $(".innerJumbo_services").addClass("innerJumbo_services__corp");
+                    owl.trigger('to.owl.carousel', 1);
+                }
+            }
+            
+
+        });
+
+    </script>
 </body>
 
 </html>

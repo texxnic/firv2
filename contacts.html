@@ -16,15 +16,17 @@
     <div class="headerMenu">
     <div class="container-fluid">
         <div class="col-md-12 headerMenu_topRow">
-            <a href="">Частным клиентам</a>
-            <a href="">Корпоративным клиентам</a>
-            <a href="" class="fRight">8 800 234-44-11</a>
+            <div class="headerMenu_serviceType">
+                <a href="/uslugi#personal" class="headerMenu_servicesType">Частным клиентам</a>
+                <a href="/uslugi#corp" class="headerMenu_servicesType">Корпоративным клиентам</a>
+            </div>
+            <a href="">8 800 234-44-11</a>
         </div>
         <div class="col-md-12 headerMenu_botRow">
             <div class="headerMenu_bot_right VAcenter">
                 <a href="./" class="headerMenu_homeLink">
-                        <img src="assets/img/whiteFirboLogo.svg" class="logoHeader" alt="">
-                        <img src="assets/img/blackFirboLogo.svg" class="logoHeader logoHeaderBlack" alt="">
+                    <img src="assets/img/whiteFirboLogo.svg" class="logoHeader" alt="">
+                    <img src="assets/img/blackFirboLogo.svg" class="logoHeader logoHeaderBlack" alt="">
                 </a>
                 <nav class="headerMenu_mainLinks VAcenter">
                     <a href="/uslugi">Услуги</a>
@@ -41,208 +43,524 @@
         <div class="col-md-12"></div>
     </div>
 </div>
+<script>
+    $('.headerMenu_menuLink').click(function(){
+        $('.headerMenu').toggleClass('headerMenu__activated');
+        if(!$('.headerMenu').hasClass('headerScroll')){
+            $('.headerMenu').addClass('headerScroll');
+        }
+    });
+</script>
 
     <div class="pageContent">
         <div class="innerJumbo innerJumbo_contacts">
             <div class="container">
-                <div class="col-md-8">
-                    <div class="innerJumbo_introText">
-                        <h2>Контакты</h2>
-                        <p><span>Почта:</span>
-                            <h3 class="contactInfo">info@firbo.ru</h3>
-                            <br>
-                            <span>Телефоны:</span>
-                            <h3 class="contactInfo"><a href="tel:88002344411">8 800 234-44-11</a></h3>
-                            <h3 class="contactInfo"><a href="tel:84959201194">8 495 920-11-94</a></h3></p>
-                        <div class="innerJumbo_textDecoration"></div>
-                    </div>
+                <div class="row">
+                        <div class="col-md-4">
+                                <div class="innerJumbo_introText">
+                                    <h2>Контакты</h2>
+                                    <div class="contacts_text">
+                                        <span>Почта:</span>
+                                    <h3 class="contactInfo">info@firbo.ru</h3>
+                                    <br>
+                                    <span>Телефоны:</span>
+                                    <h3 class="contactInfo"><a href="tel:88002344411">8 800 234-44-11</a></h3>
+                                    <h3 class="contactInfo"><a href="tel:84959201194">8 495 920-11-94</a></h3>
+                                    </div>
+            
+                                   
+                                </div>
+                            </div>
+                            <div class="col-md-8 contactForm contactForm_firbo">
+                                <h2>Остались вопросы?</h2>
+                                <span>Напишите нам!</span>
+                                    <form action="../contactform" method="post" class="contactForm2">
+                                        <div class="row inputRow">
+                                            <div class="col-md-8">
+                                                <div class="inputWrap">
+                                                    
+                                                    <input class="input" placeholder="Ф.И.О.*" name="firstname" type="text" required minlength="2">
+                                                    <span class="underline"></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="inputWrap">
+                                                    
+                                                    <input class="input" placeholder="E-mail*" name="email" type="email" required>
+                                                    <span class="underline"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row inputRow">
+                                            <div class="col-md-4">
+                                                <div class="inputWrap">
+                                                    
+                                                    <input class="input" id="phoneInput2" placeholder="+7" name="tel" type="text">
+                                                    <span class="underline"></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="inputWrap">
+                                                    
+                                                    <input class="input" placeholder="Комания" name="company" type="text">
+                                                    <span class="underline"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row inputRow">
+                                            <div class="col-md-12">
+                                                <textarea rows="1" wrap="soft" placeholder="Ваш вопрос*" class="inputTextarea" name="question" style="overflow:hidden; resize:none;"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="row justify-content-end">
+                                            
+                                            <div class="col-md-6">
+                                            <button class="g-recaptcha contactCard__submit" data-sitekey="6LdSO3sUAAAAAMft8XDMLFh8BouVolV_qIAV2tRM" data-callback='onSubmit2'>Отправить</button>
+                                               
+                                            </div>
+                                        </div>
+                                    </form>
+                            </div>
                 </div>
             </div>
 
         </div>
         <div class="newhero-section background-is-dark" id="contacts">
-            <div class="container contentWrap">
-                <h1>Контакты</h1>
+            <div class="container contactWrap contacts_container">
                 
                 <div class="col-md-4">
                     <div class="contact-card">
-                        <h3>Москва</h3>
-                        <p>улица Садовническая д. 82с2
-                            <br> БЦ Аврора, 115035
-                            <br> Выход из метро ст. "Павелецкая" в противоположную сторону от вокзала.</p>
-                        <a href="https://yandex.ru/maps/-/CBeHz4DbhA"><i class="fa fa-map-marker"
-                                aria-hidden="true"></i> Показать на карте</a>
+                        <div class="contact-card_image contact-card_image__moscow">
+                                <img src="assets/img/logov2jstLogo.svg" class="contact-card_pin" alt="">
+                        </div>
+                        <div class="contact-card_description">
+                            <a href="https://yandex.ru/maps/-/CBeHz4DbhA">
+                                <div class="contact-card_link"><i class="far fa-route"></i></div>
+                            </a>
+
+
+                            <div class="contact-card_text">
+
+                                <h4>Москва</h4>
+                                <div class="contact-card_row">
+                                    <div class="contact-card_textIcon">
+                                        <i class="far fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="contact-card_textIconDescription">
+                                        <p>ул. Садовническая д. 82с2
+                                            <br> БЦ Аврора, 115035
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- <a href="https://yandex.ru/maps/-/CBeHz4DbhA"></a> -->
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="contact-card">
-                        <h3>Москва</h3>
-                        <p>Пресненская набережная, д. 10, 123112
-                            <br> Премиум-офис, обслуживание VIP-клиентов
-                            <br>
-                            <i class="fal fa-phone-square"></i> <a href="tel:84959201149">8 495 920-11-49</a></p>
-                        <a href="https://yandex.ru/maps/-/CBeHzBACCA"><i class="fa fa-map-marker"
-                                aria-hidden="true"></i> Показать на карте</a>
+                        <div class="contact-card_image contact-card_image__moscow2"> <img src="assets/img/logov2jstLogo.svg" class="contact-card_pin" alt=""></div>
+                        <div class="contact-card_description">
+                            <a href="https://yandex.ru/maps/-/CBeHzBACCA">
+                                <div class="contact-card_link"><i class="far fa-route"></i></div>
+                            </a>
+
+
+                            <div class="contact-card_text">
+
+                                <h4>Москва</h4>
+                                <div class="contact-card_row">
+                                    <div class="contact-card_textIcon">
+                                        <i class="far fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="contact-card_textIconDescription">
+                                        <p>Пресненская набережная, д. 10, 123112
+                                            <br> Премиум-офис, обслуживание VIP-клиентов
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- <a href="https://yandex.ru/maps/-/CBeHz4DbhA"></a> -->
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="contact-card">
-                        <h3>Санкт-Петербург</h3>
-                        <p>Невский проспект, 55,
-                            <br>Санкт-Петербург, 191025
-                            <br>
-                            <i class="fal fa-phone-square"></i> <a href="tel:88124261182"> 8 800 234-44-11</a></p>
-                        <a href="https://yandex.ru/maps/-/CBehYFTUKA"><i class="fa fa-map-marker"
-                                aria-hidden="true"></i> Показать на карте</a>
+                        <div class="contact-card_image contact-card_image__spb"> <img src="assets/img/logov2jstLogo.svg" class="contact-card_pin" alt=""></div>
+                        <div class="contact-card_description">
+                            <a href="https://yandex.ru/maps/-/CBehYFTUKA">
+                                <div class="contact-card_link"><i class="far fa-route"></i></div>
+                            </a>
+
+
+                            <div class="contact-card_text">
+
+                                <h4>Санкт-Петербург</h4>
+                                <div class="contact-card_row">
+                                    <div class="contact-card_textIcon">
+                                        <i class="far fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="contact-card_textIconDescription">
+                                        <p>Невский проспект, 55,
+                                            <br>Санкт-Петербург, 191025
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- <a href="https://yandex.ru/maps/-/CBeHz4DbhA"></a> -->
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="contact-card">
-                        <h3>Екатеринбург</h3>
-                        <p>улица Сибирский Тракт д. 12, 620100
-                            <br> бизнес-комплекс «Квартал»
-                            <br>
-                            <i class="fal fa-phone-square"></i> <a href="tel:83433855862"> 8 800 234-44-11</a></p>
-                        <a href="https://yandex.ru/maps/-/CBeHzBHM0D"><i class="fa fa-map-marker"
-                                aria-hidden="true"></i> Показать на карте</a>
+                        <div class="contact-card_image contact-card_image__ekb"> <img src="assets/img/logov2jstLogo.svg" class="contact-card_pin" alt=""></div>
+                        <div class="contact-card_description">
+                            <a href="https://yandex.ru/maps/-/CBeHzBHM0D">
+                                <div class="contact-card_link"><i class="far fa-route"></i></div>
+                            </a>
+
+
+                            <div class="contact-card_text">
+
+                                <h4>Екатеринбург</h4>
+                                <div class="contact-card_row">
+                                    <div class="contact-card_textIcon">
+                                        <i class="far fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="contact-card_textIconDescription">
+                                        <p>улица Сибирский Тракт д. 12, 620100
+                                            <br> бизнес-комплекс «Квартал»
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- <a href="https://yandex.ru/maps/-/CBeHz4DbhA"></a> -->
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="contact-card">
-                        <h3>Краснодар</h3>
-                        <p>улица Красных Партизан, 152, 350049
-                            <br> БЦ Сенат
-                            <br>
-                            <i class="fal fa-phone-square"></i> <a href="tel:88612054421"> 8 800 234-44-11</a></p>
-                        <a href="https://yandex.ru/maps/-/CBeHzFAx1D"><i class="fa fa-map-marker"
-                                aria-hidden="true"></i> Показать на карте</a>
+                        <div class="contact-card_image contact-card_image__krn"> <img src="assets/img/logov2jstLogo.svg" class="contact-card_pin" alt=""></div>
+                        <div class="contact-card_description">
+                            <a href="https://yandex.ru/maps/-/CBeHzFAx1D">
+                                <div class="contact-card_link"><i class="far fa-route"></i></div>
+                            </a>
+
+
+                            <div class="contact-card_text">
+
+                                <h4>Краснодар</h4>
+                                <div class="contact-card_row">
+                                    <div class="contact-card_textIcon">
+                                        <i class="far fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="contact-card_textIconDescription">
+                                        <p>улица Красных Партизан, 152, 350049
+                                            <br> БЦ Сенат
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- <a href="https://yandex.ru/maps/-/CBeHz4DbhA"></a> -->
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="contact-card">
-                        <h3>Цюрих, Швейцария</h3>
-                        <p>Bleicherweg 10, CH-8002 Zurich</p>
-                        <p><i class="fal fa-envelope" style="margin-right: 5px"></i> zurich@firbo.ru</p>
-                        <a href="https://goo.gl/maps/qcH2NLqLDjA2"><i class="fa fa-map-marker" aria-hidden="true"></i>
-                            Показать на карте</a>
+                        <div class="contact-card_image contact-card_image__zer"> <img src="assets/img/logov2jstLogo.svg" class="contact-card_pin" alt=""></div>
+                        <div class="contact-card_description">
+                            <a href="https://goo.gl/maps/qcH2NLqLDjA2">
+                                <div class="contact-card_link"><i class="far fa-route"></i></div>
+                            </a>
+
+
+                            <div class="contact-card_text">
+
+                                <h4>Цюрих, Швейцарияа</h4>
+                                <div class="contact-card_row">
+                                    <div class="contact-card_textIcon">
+                                        <i class="far fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="contact-card_textIconDescription">
+                                        <p>Bleicherweg 10, CH-8002 Zurich</p>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="contact-card_row">
+                                    <div class="contact-card_textIcon">
+                                        <i class="far fa-envelope"></i>
+                                    </div>
+                                    <div class="contact-card_textIconDescription">
+                                        <p>zurich@firbo.ru</p>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- <a href="https://yandex.ru/maps/-/CBeHz4DbhA"></a> -->
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="contact-card">
-                        <h3>Сочи</h3>
-                        <p>Курортный просп., 18, 354 000
-                            <br> БЦ Сочи Плаза
-                        </p>
-                        <i class="fal fa-phone-square"></i> <a href="tel:88612054421"> 8 800 234-44-11</a></p>
-                        <a href="https://yandex.ru/maps/-/CBuHzFRvhB"><i class="fa fa-map-marker"
-                                aria-hidden="true"></i> Показать на карте</a>
+                        <div class="contact-card_image contact-card_image__sochi"> <img src="assets/img/logov2jstLogo.svg" class="contact-card_pin" alt=""></div>
+                        <div class="contact-card_description">
+                            <a href="https://yandex.ru/maps/-/CBuHzFRvhB">
+                                <div class="contact-card_link"><i class="far fa-route"></i></div>
+                            </a>
+
+
+                            <div class="contact-card_text">
+
+                                <h4>Сочи</h4>
+                                <div class="contact-card_row">
+                                    <div class="contact-card_textIcon">
+                                        <i class="far fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="contact-card_textIconDescription">
+                                        <p>Курортный просп., 18, 354 000
+                                            <br> БЦ Сочи Плаза
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- <a href="https://yandex.ru/maps/-/CBeHz4DbhA"></a> -->
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="contact-card">
-                        <h3>Якутск</h3>
-                        <p>ул. Кирова, 18В, 677 000
-                            <br> БЦ LG Саха
-                        </p>
-                        <i class="fal fa-phone-square"></i> <a href="tel:88002344411"> 8 800 234-44-11</a></p>
-                        <a href="https://yandex.ru/maps/-/CBqgfOVL0B"><i class="fa fa-map-marker"
-                                aria-hidden="true"></i> Показать на карте</a>
+                        <div class="contact-card_image contact-card_image__yakautsk"> <img src="assets/img/logov2jstLogo.svg" class="contact-card_pin" alt=""></div>
+                        <div class="contact-card_description">
+                            <a href="https://yandex.ru/maps/-/CBqgfOVL0B">
+                                <div class="contact-card_link"><i class="far fa-route"></i></div>
+                            </a>
+
+
+                            <div class="contact-card_text">
+
+                                <h4>Якутск</h4>
+                                <div class="contact-card_row">
+                                    <div class="contact-card_textIcon">
+                                        <i class="far fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="contact-card_textIconDescription">
+                                        <p>ул. Кирова, 18В, 677 000
+                                            <br> БЦ LG Саха
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- <a href="https://yandex.ru/maps/-/CBeHz4DbhA"></a> -->
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="contact-card">
-                        <h3>Тольятти</h3>
-                        <p>Самарская обл, г. Тольятти, Ворошилова д.17
-                            <br> БЦ Европа
-                        </p>
-                        <i class="fal fa-phone-square"></i> <a href="tel:88002344411"> 8 800 234-44-11</a></p>
-                        <a href="https://yandex.ru/maps/-/CBuHzNESLD"><i class="fa fa-map-marker"
-                                aria-hidden="true"></i> Показать на карте</a>
+                        <div class="contact-card_image contact-card_image__tolyat"> <img src="assets/img/logov2jstLogo.svg" class="contact-card_pin" alt=""></div>
+                        <div class="contact-card_description">
+                            <a href="https://yandex.ru/maps/-/CBuHzNESLD">
+                                <div class="contact-card_link"><i class="far fa-route"></i></div>
+                            </a>
+
+
+                            <div class="contact-card_text">
+
+                                <h4>Тольятти</h4>
+                                <div class="contact-card_row">
+                                    <div class="contact-card_textIcon">
+                                        <i class="far fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="contact-card_textIconDescription">
+                                        <p>Самарская обл, г. Тольятти, Ворошилова д.17
+                                            <br> БЦ Европа
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- <a href="https://yandex.ru/maps/-/CBeHz4DbhA"></a> -->
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="contact-card">
-                        <h3>Киргизия г. Бишкек </h3>
-                        <p>ул. Раззакова, 19, 720 064
-                            <br> БЦ Россия
-                        </p>
-                        <i class="fal fa-phone-square"></i> <a href="tel:88002344411"> 8 800 234-44-11</a></p>
-                        <a href="https://goo.gl/maps/S1k8DE6VvAN2"><i class="fa fa-map-marker" aria-hidden="true"></i>
-                            Показать на карте</a>
+                        <div class="contact-card_image contact-card_image__kirgiz"> <img src="assets/img/logov2jstLogo.svg" class="contact-card_pin" alt=""></div>
+                        <div class="contact-card_description">
+                            <a href="https://goo.gl/maps/S1k8DE6VvAN2">
+                                <div class="contact-card_link"><i class="far fa-route"></i></div>
+                            </a>
+
+
+                            <div class="contact-card_text">
+
+                                <h4>Киргизия г. Бишкек </h4>
+                                <div class="contact-card_row">
+                                    <div class="contact-card_textIcon">
+                                        <i class="far fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="contact-card_textIconDescription">
+                                        <p>ул. Раззакова, 19, 720 064
+                                            <br> БЦ Россия
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- <a href="https://yandex.ru/maps/-/CBeHz4DbhA"></a> -->
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="contact-card">
-                        <h3>Казахстан г. Алмата</h3>
-                        <p>ул. Бродского, 37Б, 050 034
-                            <br> БЦ АСТ Арена
-                        </p>
-                        <i class="fal fa-phone-square"></i> <a href="tel:88002344411"> 8 800 234-44-11</a></p>
-                        <a href="https://yandex.ru/maps/-/CBqgj6dqgD"><i class="fa fa-map-marker"
-                                aria-hidden="true"></i> Показать на карте</a>
+                        <div class="contact-card_image contact-card_image__kz"> <img src="assets/img/logov2jstLogo.svg" class="contact-card_pin" alt=""></div>
+                        <div class="contact-card_description">
+                            <a href="https://yandex.ru/maps/-/CBqgj6dqgD">
+                                <div class="contact-card_link"><i class="far fa-route"></i></div>
+                            </a>
+
+
+                            <div class="contact-card_text">
+
+                                <h4>Казахстан г. Алмата</h4>
+                                <div class="contact-card_row">
+                                    <div class="contact-card_textIcon">
+                                        <i class="far fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="contact-card_textIconDescription">
+                                        <p>ул. Бродского, 37Б, 050 034
+                                            <br> БЦ АСТ Арена
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- <a href="https://yandex.ru/maps/-/CBeHz4DbhA"></a> -->
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="contact-card">
-                        <h3>Белоруссия г. Минск</h3>
-                        <p>ул. Кирова, 8 , 220 030
-                            <br> БЦ Kiroff
-                        </p>
-                        <i class="fal fa-phone-square"></i> <a href="tel:88002344411"> 8 800 234-44-11</a></p>
-                        <a href="https://yandex.ru/maps/-/CBqgjCBGkB"><i class="fa fa-map-marker"
-                                aria-hidden="true"></i> Показать на карте</a>
+                        <div class="contact-card_image contact-card_image__by"> <img src="assets/img/logov2jstLogo.svg" class="contact-card_pin" alt=""></div>
+                        <div class="contact-card_description">
+                            <a href="https://yandex.ru/maps/-/CBqgjCBGkB">
+                                <div class="contact-card_link"><i class="far fa-route"></i></div>
+                            </a>
+
+
+                            <div class="contact-card_text">
+
+                                <h4>Белоруссия г. Минск</h4>
+                                <div class="contact-card_row">
+                                    <div class="contact-card_textIcon">
+                                        <i class="far fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="contact-card_textIconDescription">
+                                        <p>ул. Кирова, 8 , 220 030
+                                            <br> БЦ Kiroff
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- <a href="https://yandex.ru/maps/-/CBeHz4DbhA"></a> -->
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="contact-card">
-                        <h3>Украина г. Киев</h3>
-                        <p>ул. Владимира Сосюры, 6, 02 090
-                            <br> БЦ Прага
-                        </p>
-                        <i class="fal fa-phone-square"></i> <a href="tel:88002344411"> 8 800 234-44-11</a></p>
-                        <a href="https://yandex.ru/maps/-/CBqgjCcZSA"><i class="fa fa-map-marker"
-                                aria-hidden="true"></i> Показать на карте</a>
+                        <div class="contact-card_image contact-card_image__ua"> <img src="assets/img/logov2jstLogo.svg" class="contact-card_pin" alt=""></div>
+                        <div class="contact-card_description">
+                            <a href="https://yandex.ru/maps/-/CBqgjCcZSA">
+                                <div class="contact-card_link"><i class="far fa-route"></i></div>
+                            </a>
+
+
+                            <div class="contact-card_text">
+
+                                <h4>Украина г. Киев</h4>
+                                <div class="contact-card_row">
+                                    <div class="contact-card_textIcon">
+                                        <i class="far fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="contact-card_textIconDescription">
+                                        <p>ул. Владимира Сосюры, 6, 02 090
+                                            <br> БЦ Прага
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- <a href="https://yandex.ru/maps/-/CBeHz4DbhA"></a> -->
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="contact-card">
-                        <h3>Армения г. Ереван</h3>
-                        <p>ул. Григора Лусаворича 9, 0015
-                            <br> БЦ Ереван Плаза
-                        </p>
-                        <i class="fal fa-phone-square"></i> <a href="tel:88002344411"> 8 800 234-44-11</a></p>
-                        <a href="https://yandex.ru/maps/-/CBqgjCxelD"><i class="fa fa-map-marker"
-                                aria-hidden="true"></i> Показать на карте</a>
+                        <div class="contact-card_image contact-card_image__am"> <img src="assets/img/logov2jstLogo.svg" class="contact-card_pin" alt=""></div>
+                        <div class="contact-card_description">
+                            <a href="https://yandex.ru/maps/-/CBqgjCxelD">
+                                <div class="contact-card_link"><i class="far fa-route"></i></div>
+                            </a>
+
+
+                            <div class="contact-card_text">
+
+                                <h4>Армения г. Ереван</h4>
+                                <div class="contact-card_row">
+                                    <div class="contact-card_textIcon">
+                                        <i class="far fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="contact-card_textIconDescription">
+                                        <p>ул. Григора Лусаворича 9, 0015
+                                            <br> БЦ Ереван Плаза
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- <a href="https://yandex.ru/maps/-/CBeHz4DbhA"></a> -->
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="contact-card">
-                        <h3>Польша г. Варшава</h3>
-                        <p>ул. Иерусалимская аллея, 96, 00 807
-                            <br> БЦ Aon Hewitt Sp
-                        </p>
-                        <i class="fal fa-phone-square"></i> <a href="tel:88002344411"> 8 800 234-44-11</a></p>
-                        <a href="https://goo.gl/maps/VaXiwdZgCFC2"><i class="fa fa-map-marker" aria-hidden="true"></i>
-                            Показать на карте</a>
+                        <div class="contact-card_image contact-card_image__pl"> <img src="assets/img/logov2jstLogo.svg" class="contact-card_pin" alt=""></div>
+                        <div class="contact-card_description">
+                            <a href="https://goo.gl/maps/VaXiwdZgCFC2">
+                                <div class="contact-card_link"><i class="far fa-route"></i></div>
+                            </a>
+
+
+                            <div class="contact-card_text">
+
+                                <h4>Польша г. Варшава</h4>
+                                <div class="contact-card_row">
+                                    <div class="contact-card_textIcon">
+                                        <i class="far fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="contact-card_textIconDescription">
+                                        <p>ул. Иерусалимская аллея, 96, 00 807
+                                            <br> БЦ Aon Hewitt Sp
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- <a href="https://yandex.ru/maps/-/CBeHz4DbhA"></a> -->
+                        </div>
                     </div>
                 </div>
+
             </div>
         </div>
-
-
-        <!-- <div class="aboutFull aboutFullFirst infoBlock">
-            <div class="container">
-                <i class="fas fa-plus-square fa-5x"></i>
-                <br>
-                <h3> История одной из самых известных инвестиционных фондов в России Firbo Capital берет свое начало в
-                    1996 году в Швейцарии.</h3>
-            </div>
-        </div> -->
-
-
-
-
-
     </div>
 
     <footer id="footer">

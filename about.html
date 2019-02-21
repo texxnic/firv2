@@ -15,15 +15,17 @@
     <div class="headerMenu">
     <div class="container-fluid">
         <div class="col-md-12 headerMenu_topRow">
-            <a href="">Частным клиентам</a>
-            <a href="">Корпоративным клиентам</a>
-            <a href="" class="fRight">8 800 234-44-11</a>
+            <div class="headerMenu_serviceType">
+                <a href="/uslugi#personal" class="headerMenu_servicesType">Частным клиентам</a>
+                <a href="/uslugi#corp" class="headerMenu_servicesType">Корпоративным клиентам</a>
+            </div>
+            <a href="">8 800 234-44-11</a>
         </div>
         <div class="col-md-12 headerMenu_botRow">
             <div class="headerMenu_bot_right VAcenter">
                 <a href="./" class="headerMenu_homeLink">
-                        <img src="assets/img/whiteFirboLogo.svg" class="logoHeader" alt="">
-                        <img src="assets/img/blackFirboLogo.svg" class="logoHeader logoHeaderBlack" alt="">
+                    <img src="assets/img/whiteFirboLogo.svg" class="logoHeader" alt="">
+                    <img src="assets/img/blackFirboLogo.svg" class="logoHeader logoHeaderBlack" alt="">
                 </a>
                 <nav class="headerMenu_mainLinks VAcenter">
                     <a href="/uslugi">Услуги</a>
@@ -40,6 +42,14 @@
         <div class="col-md-12"></div>
     </div>
 </div>
+<script>
+    $('.headerMenu_menuLink').click(function(){
+        $('.headerMenu').toggleClass('headerMenu__activated');
+        if(!$('.headerMenu').hasClass('headerScroll')){
+            $('.headerMenu').addClass('headerScroll');
+        }
+    });
+</script>
     <div class="jumbo">
 
         <div class="jumbo_imageW">
