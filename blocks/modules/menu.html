@@ -1,9 +1,11 @@
 <div class="headerMenu">
+    
     <div class="container-fluid">
         <div class="col-md-12 headerMenu_topRow">
             <div class="headerMenu_serviceType">
                 <a href="/uslugi#personal" class="headerMenu_servicesType">Частным клиентам</a>
                 <a href="/uslugi#corp" class="headerMenu_servicesType">Корпоративным клиентам</a>
+                <a href="/premium" class="headerMenu_servicesType"><i class="fas fa-user-alt"></i> Фирбо премиум</a>
             </div>
             <a href="">8 800 234-44-11</a>
         </div>
@@ -27,11 +29,20 @@
         </div>
         <div class="col-md-12"></div>
     </div>
+    <div class="container-fluid headerMenu_mobileMenu">
+            <nav class="headerMenu_mobileLinks">
+                <a href="/uslugi">Услуги</a>
+                <a href="/about">О компании</a>
+                <a href="https://firbonews.ru/">Новости</a>
+                <a href="http://firbo-otzyvy.ru/">Отзывы</a>
+                <a href="/contacts">Контакты</a>
+            </nav>
+        </div>
 </div>
 <script>
-    $('.headerMenu_menuLink').click(function(){
+    $('.headerMenu_menuLink').click(function () {
         $('.headerMenu').toggleClass('headerMenu__activated');
-        if(!$('.headerMenu').hasClass('headerScroll')){
+        if (!$('.headerMenu').hasClass('headerScroll')) {
             $('.headerMenu').addClass('headerScroll');
         }
     });

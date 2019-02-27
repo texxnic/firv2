@@ -24,30 +24,7 @@ $(document).ready(function () {
     // main buble Animation
 
 
-    new ScrollMagic.Scene({
-        duration: $(window).height(),
-        triggerHook: 0,
-
-    })
-        .setTween(".jumbo_png", { top: '-20%' })
-
-        .addTo(controller);
-    /* Прозрачность при скролле */
-    new ScrollMagic.Scene({
-        duration: $(window).height() / 2,
-        triggerHook: 0,
-
-    })
-        .setTween(".jumbo", { opacity: 0 })
-
-        .addTo(controller);
-    $(".jumboText").mousemove(function (e) {
-
-        parallaxIt(e, ".jumbo_png", -30);
-
-        parallaxIt(e, ".jumbo__image", -70);
-    });
-
+   
     new ScrollMagic.Scene({
         duration: $(window).height() / 6,
         triggerHook: 0.5,
@@ -55,7 +32,7 @@ $(document).ready(function () {
 
     })
         .setClassToggle(".aboutFirboSlide_word__F", "aboutFirboSlide__visible")
-        .addIndicators()
+        
         .addTo(controller);
 
     new ScrollMagic.Scene({
@@ -66,7 +43,7 @@ $(document).ready(function () {
 
     })
         .setClassToggle(".aboutFirboSlide_word__I", "aboutFirboSlide__visible")
-        .addIndicators()
+        
         .addTo(controller);
     new ScrollMagic.Scene({
         duration: $(window).height() / 6,
@@ -76,7 +53,7 @@ $(document).ready(function () {
 
     })
         .setClassToggle(".aboutFirboSlide_word__R", "aboutFirboSlide__visible")
-        .addIndicators()
+        
         .addTo(controller);
     new ScrollMagic.Scene({
         duration: $(window).height() / 6,
@@ -86,7 +63,7 @@ $(document).ready(function () {
 
     })
         .setClassToggle(".aboutFirboSlide_word__B", "aboutFirboSlide__visible")
-        .addIndicators()
+        
         .addTo(controller);
 
     new ScrollMagic.Scene({
@@ -97,7 +74,7 @@ $(document).ready(function () {
 
     })
         .setClassToggle(".aboutFirboSlide_word__O", "aboutFirboSlide__visible")
-        .addIndicators()
+        
         .addTo(controller);
 
     new ScrollMagic.Scene({
@@ -108,7 +85,7 @@ $(document).ready(function () {
 
     })
         .setClassToggle(".aboutFirboSlide_letter", "aboutFirboSlide__visible")
-        .addIndicators()
+        
         .addTo(controller);
     new ScrollMagic.Scene({
 
@@ -118,7 +95,7 @@ $(document).ready(function () {
 
     })
         .setClassToggle(".aboutFirboSlide_capital", "aboutFirboSlide__visible")
-        .addIndicators()
+        
         .addTo(controller);
 
 
@@ -126,17 +103,7 @@ $(document).ready(function () {
 
 
 
-    function parallaxIt(e, target, movement) {
-        var $this = $(".jumbo");
-        var relX = e.pageX - $this.offset().left;
-        var relY = e.pageY - $this.offset().top;
 
-        TweenMax.to(target, 1, {
-            x: (relX - $this.width() / 2) / $this.width() * movement,
-            y: (relY - $this.height() / 2) / $this.height() * movement
-        });
-
-    }
 
 });
 

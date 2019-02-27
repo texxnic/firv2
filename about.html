@@ -1,62 +1,76 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Firbo Capital</title>
     <link rel="stylesheet" type="text/css" href="assets/css/bundle.css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Oswald:300,700&amp;subset=cyrillic"
         rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/fav/favicon-16x16.png">
+    <link rel="manifest" href="/assets/img/fav/site.webmanifest">
+    <link rel="mask-icon" href="/assets/img/fav/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/assets/img/fav/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/assets/img/fav/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
 </head>
-
 <body>
     <div class="headerMenu">
-    <div class="container-fluid">
-        <div class="col-md-12 headerMenu_topRow">
-            <div class="headerMenu_serviceType">
-                <a href="/uslugi#personal" class="headerMenu_servicesType">Частным клиентам</a>
-                <a href="/uslugi#corp" class="headerMenu_servicesType">Корпоративным клиентам</a>
+    
+        <div class="container-fluid">
+            <div class="col-md-12 headerMenu_topRow">
+                <div class="headerMenu_serviceType">
+                    <a href="/uslugi#personal" class="headerMenu_servicesType">Частным клиентам</a>
+                    <a href="/uslugi#corp" class="headerMenu_servicesType">Корпоративным клиентам</a>
+                    <a href="/premium" class="headerMenu_servicesType"><i class="fas fa-user-alt"></i> Фирбо премиум</a>
+                </div>
+                <a href="">8 800 234-44-11</a>
             </div>
-            <a href="">8 800 234-44-11</a>
+            <div class="col-md-12 headerMenu_botRow">
+                <div class="headerMenu_bot_right VAcenter">
+                    <a href="./" class="headerMenu_homeLink">
+                        <img src="assets/img/whiteFirboLogo.svg" class="logoHeader" alt="">
+                        <img src="assets/img/blackFirboLogo.svg" class="logoHeader logoHeaderBlack" alt="">
+                    </a>
+                    <nav class="headerMenu_mainLinks VAcenter">
+                        <a href="/uslugi">Услуги</a>
+                        <a href="/about">О компании</a>
+                        <a href="https://firbonews.ru/">Новости</a>
+                        <a href="http://firbo-otzyvy.ru/">Отзывы</a>
+                        <a href="/contacts">Контакты</a>
+                    </nav>
+
+
+                </div>
+                <div class="headerMenu_menuLink VAcenter"><i class="far fa-bars"></i></div>
+            </div>
+            <div class="col-md-12"></div>
         </div>
-        <div class="col-md-12 headerMenu_botRow">
-            <div class="headerMenu_bot_right VAcenter">
-                <a href="./" class="headerMenu_homeLink">
-                    <img src="assets/img/whiteFirboLogo.svg" class="logoHeader" alt="">
-                    <img src="assets/img/blackFirboLogo.svg" class="logoHeader logoHeaderBlack" alt="">
-                </a>
-                <nav class="headerMenu_mainLinks VAcenter">
+        <div class="container-fluid headerMenu_mobileMenu">
+                <nav class="headerMenu_mobileLinks">
                     <a href="/uslugi">Услуги</a>
                     <a href="/about">О компании</a>
                     <a href="https://firbonews.ru/">Новости</a>
                     <a href="http://firbo-otzyvy.ru/">Отзывы</a>
                     <a href="/contacts">Контакты</a>
                 </nav>
-
-
             </div>
-            <div class="headerMenu_menuLink VAcenter"><i class="far fa-bars"></i></div>
-        </div>
-        <div class="col-md-12"></div>
     </div>
-</div>
-<script>
-    $('.headerMenu_menuLink').click(function(){
-        $('.headerMenu').toggleClass('headerMenu__activated');
-        if(!$('.headerMenu').hasClass('headerScroll')){
-            $('.headerMenu').addClass('headerScroll');
-        }
-    });
-</script>
-    <div class="jumbo">
+    <script>
+        $('.headerMenu_menuLink').click(function () {
+            $('.headerMenu').toggleClass('headerMenu__activated');
+            if (!$('.headerMenu').hasClass('headerScroll')) {
+                $('.headerMenu').addClass('headerScroll');
+            }
+        });
+    </script>
 
-        <div class="jumbo_imageW">
-            <img src="assets/img/jBG2.jpg" alt="" class="jumbo__image">
-            <img src="assets/img/jPNG2.png" alt="" class="jumbo_png">
-        </div>
-    </div>
     <div class="pageContent">
         <div class="jumboText">
             <div class="container">
@@ -333,7 +347,7 @@
                             <li><span class="boldText">Сбалансированная -</span> Предполагает использование капитала для
                                 покупки облигаций и акций
                                 эмитентов;</li>
-                            <li><span class="boldText">Агрессивная -</span>Разработана специально для тех, кто
+                            <li><span class="boldText">Агрессивная -</span> Разработана специально для тех, кто
                                 предпочитает быстрый доход. Предполагает
                                 торговлю на фондовом рынке;</li>
                             <li>
@@ -360,50 +374,48 @@
 
         <footer id="footer">
 
-            <div class="btmFooter">
-                <div class="container">
-                    <div class="col-sm-12 bottomFooterLayout">
-                        <div class="bottomLinks">
-                            <a href="http://firbo.ru/">Firbo Capital</a>
-                            <a href="https://firbo-uslugi.ru/">Наши услуги</a>
-                            <a href="http://firbo-otzyvy.ru/">Отзывы</a>
-                            <a href="">Политика конфидициальности</a>
-                            <a href="https://firbo.ru/contacts.php">Контакты</a>
-                        </div>
+                    <div class="btmFooter">
+                        <div class="container-fluid">
+                            <div class="col-sm-12 bottomFooterLayout">
+                                <div class="bottomLinks">
+                                    <a href="http://firbo.ru/">Firbo Capital</a>
+                                    <a href="https://firbo-uslugi.ru/">Наши услуги</a>
+                                    <a href="http://firbo-otzyvy.ru/">Отзывы</a>
+                                    <a href="">Политика конфидициальности</a>
+                                    <a href="https://firbo.ru/contacts.php">Контакты</a>
+                                </div>
 
-                        <ul class="social">
-                            <li><a href="https://www.facebook.com/groups/176475799834481/" class="social-btn social-facebook"
-                                    title="Фирбо новости в фейсбуке"><i class="ti-facebook"></i></a>
-                            </li>
-                            <li><a href="https://twitter.com/Firbo_News" class="social-btn social-twitter" title="Фирбо новости в твиттере"><i
-                                        class="fab fa-twitter"></i></a>
-                            </li>
-                            <li><a href="https://www.instagram.com/firbo_news/" class="social-btn social-instagram"
-                                    title="Фирбо новости в инстаграме"><i class="fab fa-instagram"></i></a>
-                            </li>
-                            <li><a href="https://vk.com/firbonews" class="social-btn social-vk" title="Фирбо новости во вконтакте"><i
-                                        class="fab fa-vk"></i></a>
-                            </li>
-                            <li><a href="https://www.ok.ru/group/59004804923434" class="social-btn social-ok" title="Фирбо новости в однокласниках"><i
-                                        class="fab fa-odnoklassniki"></i></a>
-                            </li>
-                            <li><a href="https://zen.yandex.ru/id/5b0e992c7800193a64d0b410" class="social-btn social-ok"
-                                    title="Фирбо новости в Яндекс.Дзене"><i class="fab fa-yandex"></i></a>
-                            </li>
-                        </ul>
-                    </div>
+                                <ul class="social">
+                                    <li><a href="https://www.facebook.com/FirboCapital/" class="social-btn social-facebook"
+                                            title="Фирбо новости в фейсбуке"><i class="ti-facebook"></i></a>
+                                    </li>
+                                    <li><a href="https://twitter.com/firbocapital" class="social-btn social-twitter" title="Фирбо новости в твиттере"><i
+                                                class="fab fa-twitter"></i></a>
+                                    </li>
+                                    <li><a href="https://www.instagram.com/firbocapital/" class="social-btn social-instagram"
+                                            title="Фирбо новости в инстаграме"><i class="fab fa-instagram"></i></a>
+                                    </li>
+                                    <li><a href="https://vk.com/firbocapital" class="social-btn social-vk" title="Фирбо новости во вконтакте"><i
+                                                class="fab fa-vk"></i></a>
+                                    </li>
+                                    <li><a href="https://ok.ru/firbocapital" class="social-btn social-ok" title="Фирбо новости в однокласниках"><i
+                                                class="fab fa-odnoklassniki"></i></a>
+                                    </li>
+                            
+                                </ul>
+                            </div>
 
-                    <div class="col-md-12 footerSecondRow">
-                        <div class="copyryght">
-                            <span>© 1996 - <span class="currentYear"></span> ООО "Фирбо Капитал"</span>
-                            <span>Использование материалов сайта на иных ресурсах разрешено только с письменного
-                                разрешения редакции Фирбо Капитал</span>
+                            <div class="col-md-12 footerSecondRow">
+                                <div class="copyryght">
+                                    <span>© 1996 - <span class="currentYear"></span> ООО "Фирбо Капитал"</span>
+                                    <span>Использование материалов сайта на иных ресурсах разрешено только с письменного
+                                        разрешения редакции Фирбо Капитал</span>
+                                </div>
+                                <img src="assets/img/logov2jstLogo.svg" alt="" class="ghostFooterLogo">
+                            </div>
                         </div>
-                        <img src="assets/img/ghostLogo.jpg" alt="" class="ghostFooterLogo">
                     </div>
-                </div>
-            </div>
-        </footer>
+                </footer>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>

@@ -1,1 +1,27 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 325.2 373.8"><defs><style>.a{fill:none;stroke-miterlimit:10;stroke-width:5px;stroke:url(#a);}.b{fill:url(#b);}.c{fill:url(#c);}.d{fill:url(#d);}</style><linearGradient id="a" x1="140.96" y1="363.13" x2="148.45" y2="320.63" gradientTransform="matrix(1, 0, 0, -1, -40.72, 421.5)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#a5ddef"/><stop offset="1" stop-color="#185898"/></linearGradient><linearGradient id="b" x1="239.19" y1="42.5" x2="239.19" y2="242.84" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#32a8d8"/><stop offset="1" stop-color="#0c3a69"/></linearGradient><linearGradient id="c" x1="370.37" y1="174.43" x2="252.25" y2="242.63" xlink:href="#b"/><linearGradient id="d" x1="40.72" y1="262.85" x2="351.7" y2="262.85" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#32a8d8"/><stop offset="1" stop-color="#1e5592"/></linearGradient></defs><title>logov2jstLogo</title><circle class="a" cx="103.98" cy="79.6" r="19.1"/><path class="b" d="M129.7,134c-5.3-7.1-5.9-17,.6-24.6l52.8-66.9H352.8L214.46,218.6c-8.34,12.57.83,24.24.83,24.24m-85-133.44" transform="translate(-40.72 -42.5)"/><path class="c" d="M252.7,222a15.94,15.94,0,0,0-.49,20.3l27.48,34.94,86.23-110.54-69.68.06Z" transform="translate(-40.72 -42.5)"/><path class="d" d="M215.4,242.8,130.3,109.4s-78.7,100.1-84.8,108-6.2,17.5-1,24.2L182,416.3H351.7L129.7,134c-5.3-7.1-5.9-17,.6-24.6" transform="translate(-40.72 -42.5)"/></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 325.2 373.8" style="enable-background:new 0 0 325.2 373.8;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+	.st1{fill:url(#SVGID_2_);}
+	.st2{fill:url(#SVGID_3_);}
+</style>
+<title>logov2jstLogo</title>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="239.1875" y1="331.39" x2="239.1875" y2="131.05" gradientTransform="matrix(1 0 0 -1 -40.72 331.39)">
+	<stop  offset="0" style="stop-color:#32A8D8"/>
+	<stop  offset="1" style="stop-color:#0C3A69"/>
+</linearGradient>
+<path class="st0" d="M89,91.5c-5.3-7.1-5.9-17,0.6-24.6L142.4,0h169.7L173.7,176.1c-8.3,12.6,0.8,24.2,0.8,24.2"/>
+<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="370.376" y1="199.4724" x2="252.2176" y2="131.2502" gradientTransform="matrix(1 0 0 -1 -40.72 331.39)">
+	<stop  offset="0" style="stop-color:#32A8D8"/>
+	<stop  offset="1" style="stop-color:#0C3A69"/>
+</linearGradient>
+<path class="st1" d="M212,179.5c-5,5.8-5.2,14.3-0.5,20.3l27.5,34.9l86.2-110.5l-69.7,0.1L212,179.5z"/>
+<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="40.7524" y1="111.04" x2="351.7" y2="111.04" gradientTransform="matrix(1 0 0 -1 -40.72 331.39)">
+	<stop  offset="0" style="stop-color:#32A8D8"/>
+	<stop  offset="1" style="stop-color:#1E5592"/>
+</linearGradient>
+<path class="st2" d="M174.7,200.3L89.6,66.9c0,0-78.7,100.1-84.8,108s-6.2,17.5-1,24.2l137.5,174.7H311L89,91.5
+	c-5.3-7.1-5.9-17,0.6-24.6"/>
+</svg>

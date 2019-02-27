@@ -1,56 +1,76 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Firbo Capital</title>
     <link rel="stylesheet" type="text/css" href="assets/css/bundle.css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Oswald:300,700&amp;subset=cyrillic"
         rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/fav/favicon-16x16.png">
+    <link rel="manifest" href="/assets/img/fav/site.webmanifest">
+    <link rel="mask-icon" href="/assets/img/fav/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/assets/img/fav/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/assets/img/fav/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
 </head>
-
 
 <body>
     <div class="headerMenu">
-    <div class="container-fluid">
-        <div class="col-md-12 headerMenu_topRow">
-            <div class="headerMenu_serviceType">
-                <a href="/uslugi#personal" class="headerMenu_servicesType">Частным клиентам</a>
-                <a href="/uslugi#corp" class="headerMenu_servicesType">Корпоративным клиентам</a>
+    
+        <div class="container-fluid">
+            <div class="col-md-12 headerMenu_topRow">
+                <div class="headerMenu_serviceType">
+                    <a href="/uslugi#personal" class="headerMenu_servicesType">Частным клиентам</a>
+                    <a href="/uslugi#corp" class="headerMenu_servicesType">Корпоративным клиентам</a>
+                    <a href="/premium" class="headerMenu_servicesType"><i class="fas fa-user-alt"></i> Фирбо премиум</a>
+                </div>
+                <a href="">8 800 234-44-11</a>
             </div>
-            <a href="">8 800 234-44-11</a>
+            <div class="col-md-12 headerMenu_botRow">
+                <div class="headerMenu_bot_right VAcenter">
+                    <a href="./" class="headerMenu_homeLink">
+                        <img src="assets/img/whiteFirboLogo.svg" class="logoHeader" alt="">
+                        <img src="assets/img/blackFirboLogo.svg" class="logoHeader logoHeaderBlack" alt="">
+                    </a>
+                    <nav class="headerMenu_mainLinks VAcenter">
+                        <a href="/uslugi">Услуги</a>
+                        <a href="/about">О компании</a>
+                        <a href="https://firbonews.ru/">Новости</a>
+                        <a href="http://firbo-otzyvy.ru/">Отзывы</a>
+                        <a href="/contacts">Контакты</a>
+                    </nav>
+
+
+                </div>
+                <div class="headerMenu_menuLink VAcenter"><i class="far fa-bars"></i></div>
+            </div>
+            <div class="col-md-12"></div>
         </div>
-        <div class="col-md-12 headerMenu_botRow">
-            <div class="headerMenu_bot_right VAcenter">
-                <a href="./" class="headerMenu_homeLink">
-                    <img src="assets/img/whiteFirboLogo.svg" class="logoHeader" alt="">
-                    <img src="assets/img/blackFirboLogo.svg" class="logoHeader logoHeaderBlack" alt="">
-                </a>
-                <nav class="headerMenu_mainLinks VAcenter">
+        <div class="container-fluid headerMenu_mobileMenu">
+                <nav class="headerMenu_mobileLinks">
                     <a href="/uslugi">Услуги</a>
                     <a href="/about">О компании</a>
                     <a href="https://firbonews.ru/">Новости</a>
                     <a href="http://firbo-otzyvy.ru/">Отзывы</a>
                     <a href="/contacts">Контакты</a>
                 </nav>
-
-
             </div>
-            <div class="headerMenu_menuLink VAcenter"><i class="far fa-bars"></i></div>
-        </div>
-        <div class="col-md-12"></div>
     </div>
-</div>
-<script>
-    $('.headerMenu_menuLink').click(function(){
-        $('.headerMenu').toggleClass('headerMenu__activated');
-        if(!$('.headerMenu').hasClass('headerScroll')){
-            $('.headerMenu').addClass('headerScroll');
-        }
-    });
-</script>
+    <script>
+        $('.headerMenu_menuLink').click(function () {
+            $('.headerMenu').toggleClass('headerMenu__activated');
+            if (!$('.headerMenu').hasClass('headerScroll')) {
+                $('.headerMenu').addClass('headerScroll');
+            }
+        });
+    </script>
 
     <div class="pageContent">
         <div class="innerJumbo innerJumbo_services">
@@ -58,8 +78,8 @@
                 <div class="col-md-8">
                     <div class="innerJumbo_introText borderedDiv">
                         <h2>Услуги</h2>
-                        <p>Компания фирбо капитал предлагает широкий спектр высококачественных услуг для физических и
-                            юридических лиц, сочитающие в себе российский и международный опыт инвестиционного бизнеса,
+                        <p>Компания Фирбо Капитал предлагает широкий спектр высококачественных услуг для физических и
+                            юридических лиц, сочитающих в себе российский и международный опыт инвестиционного бизнеса,
                             чтобы принести максимальный доход и стать лидером в портфельном управлении.</p>
 
                     </div>
@@ -106,8 +126,8 @@
                         </div>
                         <div class="col-md-7 servicesBlock_description">
                             <h3>Инвестировать деньги</h3>
-                            <p>Выражение «деньги должны работать», знакомо многим, и большинство из них уже давно
-                                научились приумножать средства различными способами. На помощь в этом деле, приходит
+                            <p>«Деньги должны работать» - выражение знакомо многим, большинство уже давно
+                                научились приумножать средства различными способами. Тем кто еще не разобрался в этом деле, приходит
                                 инвестиционная компания Фирбо Капитал, где вопрос стоит только за тем, какому виду
                                 вложения отдать предпочтение. </p>
                             <div class="servicesBlock_types">
@@ -274,31 +294,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row servicesBlock_item  justify-content-around">
-                        <div class="col-md-3 servicesBlock_imageWrap">
-                            <div class="servicesBlock_image servicesBlock_image__charity"></div>
-                            <div class="servicesBlock_imageDottedPattern"></div>
-                        </div>
-                        <div class="col-md-7 servicesBlock_description">
-                            <h3>Благотворительность</h3>
-                            <p>!!!!!!!!!Компания фирбо капитал предлагает широкий спектр высококачественных услуг для
-                                физических
-                                и
-                                юридических лиц, сочитающие в себе российский и международный опыт инвестиционного
-                                бизнеса,
-                                чтобы принести максимальный доход и стать лидером в портфельном управлении.</p>
-                            <div class="servicesBlock_types">
-                                <div class="servicesBlock_type actionButton">Узнать больше<i
-                                        class="fas fa-arrow-circle-right"></i></div>
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
                 <div class="container">
                     <div class="row servicesBlock_item  justify-content-around">
                         <div class="col-md-3 servicesBlock_imageWrap">
                             <div class="servicesBlock_image servicesBlock_image__investor"></div>
-                            <div class="servicesBlock_imageDottedPattern"></div>
+                            <div class="servicesBlock_imageDottedPattern servicesBlock_imageDottedPattern__corp"></div>
                         </div>
                         <div class="col-md-7 servicesBlock_description">
                             <h3>Поиск инвестора</h3>
@@ -319,7 +321,7 @@
                     <div class="row servicesBlock_item  justify-content-around">
                         <div class="col-md-3 servicesBlock_imageWrap">
                             <div class="servicesBlock_image servicesBlock_image__entityServ"></div>
-                            <div class="servicesBlock_imageDottedPattern"></div>
+                            <div class="servicesBlock_imageDottedPattern servicesBlock_imageDottedPattern__corp"></div>
                         </div>
                         <div class="col-md-7 servicesBlock_description">
                             <h3>Различные услуги для юридических лиц</h3>
@@ -340,7 +342,7 @@
                     <div class="row servicesBlock_item  justify-content-around">
                         <div class="col-md-3 servicesBlock_imageWrap">
                             <div class="servicesBlock_image servicesBlock_image__startupServ"></div>
-                            <div class="servicesBlock_imageDottedPattern"></div>
+                            <div class="servicesBlock_imageDottedPattern servicesBlock_imageDottedPattern__corp"></div>
                         </div>
                         <div class="col-md-7 servicesBlock_description">
                             <h3>Стартапы</h3>
@@ -360,7 +362,7 @@
                     <div class="row servicesBlock_item  justify-content-around">
                         <div class="col-md-3 servicesBlock_imageWrap">
                             <div class="servicesBlock_image servicesBlock_image__governmentServ"></div>
-                            <div class="servicesBlock_imageDottedPattern"></div>
+                            <div class="servicesBlock_imageDottedPattern servicesBlock_imageDottedPattern__corp"></div>
                         </div>
                         <div class="col-md-7 servicesBlock_description">
                             <h3>Государственные тендеры</h3>
@@ -379,11 +381,15 @@
                     <div class="row servicesBlock_item  justify-content-around">
                         <div class="col-md-3 servicesBlock_imageWrap">
                             <div class="servicesBlock_image servicesBlock_image__consultServ"></div>
-                            <div class="servicesBlock_imageDottedPattern"></div>
+                            <div class="servicesBlock_imageDottedPattern servicesBlock_imageDottedPattern__corp"></div>
                         </div>
                         <div class="col-md-7 servicesBlock_description">
                             <h3>Консалтинговые услуги</h3>
-                            <p>Испытываете трудности в развитии бизнеса, или возникли проблемы по части выполнения управленческих задач? Наши специалисты выполнят целый комплекс консалтинговых услуг по устранению возникших сложностей в работе Вашего бизнеса. Штат сотрудников Фирбо Капитал обладает большим опытом сотрудничества с другими организациями, где ежедневно решаются десятки аналогичных задач.</p>
+                            <p>Испытываете трудности в развитии бизнеса, или возникли проблемы по части выполнения
+                                управленческих задач? Наши специалисты выполнят целый комплекс консалтинговых услуг по
+                                устранению возникших сложностей в работе Вашего бизнеса. Штат сотрудников Фирбо Капитал
+                                обладает большим опытом сотрудничества с другими организациями, где ежедневно решаются
+                                десятки аналогичных задач.</p>
                             <div class="servicesBlock_types">
                                 <div class="servicesBlock_type">Реклама и PR</div>
                                 <div class="servicesBlock_type">Кадровые услуги</div>
@@ -395,11 +401,13 @@
                     <div class="row servicesBlock_item  justify-content-around">
                         <div class="col-md-3 servicesBlock_imageWrap">
                             <div class="servicesBlock_image servicesBlock_image__accou"></div>
-                            <div class="servicesBlock_imageDottedPattern"></div>
+                            <div class="servicesBlock_imageDottedPattern servicesBlock_imageDottedPattern__corp"></div>
                         </div>
                         <div class="col-md-7 servicesBlock_description">
                             <h3>Бухгалтерский учет</h3>
-                            <p>Бухгалтерский учёт является неотъемлемой – неотъемлемая часть бизнеса, которая больше известна под упорядоченной системой сбора и оформления информации, касательно материального положения (имущественного) компании. </p>
+                            <p>Бухгалтерский учёт является неотъемлемой – неотъемлемая часть бизнеса, которая больше
+                                известна под упорядоченной системой сбора и оформления информации, касательно
+                                материального положения (имущественного) компании. </p>
                             <div class="servicesBlock_types">
                                 <div class="servicesBlock_type">Сопровождение бизнеса</div>
                                 <div class="servicesBlock_type actionButton">Узнать больше<i
@@ -410,11 +418,14 @@
                     <div class="row servicesBlock_item  justify-content-around">
                         <div class="col-md-3 servicesBlock_imageWrap">
                             <div class="servicesBlock_image servicesBlock_image__lawyerServ"></div>
-                            <div class="servicesBlock_imageDottedPattern"></div>
+                            <div class="servicesBlock_imageDottedPattern servicesBlock_imageDottedPattern__corp"></div>
                         </div>
                         <div class="col-md-7 servicesBlock_description">
                             <h3>Юридические услуги</h3>
-                            <p>Юристы Фирбо Капитал имеют богатый опыт проведения комплекса юридического аудита предприятий, решения различного характера вопросов, которые могут возникать в процессе производственной деятельности, сопряженной с инвестиционными сделками, ценными активами, и юридическим аудитом. </p>
+                            <p>Юристы Фирбо Капитал имеют богатый опыт проведения комплекса юридического аудита
+                                предприятий, решения различного характера вопросов, которые могут возникать в процессе
+                                производственной деятельности, сопряженной с инвестиционными сделками, ценными активами,
+                                и юридическим аудитом. </p>
                             <div class="servicesBlock_types">
                                 <div class="servicesBlock_type">Готовые управляющие компании</div>
                                 <div class="servicesBlock_type">Покупка/продажа банка</div>
@@ -430,11 +441,14 @@
                     <div class="row servicesBlock_item  justify-content-around">
                         <div class="col-md-3 servicesBlock_imageWrap">
                             <div class="servicesBlock_image servicesBlock_image__buildings"></div>
-                            <div class="servicesBlock_imageDottedPattern"></div>
+                            <div class="servicesBlock_imageDottedPattern servicesBlock_imageDottedPattern__corp"></div>
                         </div>
                         <div class="col-md-7 servicesBlock_description">
                             <h3>Недвижимость</h3>
-                            <p>Наша компания поможет продать или найти недвижимость для вас или вашего бизнеса. Лучшие офисы, дома и квартиры с помощью Фирбо капитал становятся чуточку ближе. Сопровождение сделок, поиск недвижимости, сопровождение сделок и нежвижимость от компании Фирбо капитал.</p>
+                            <p>Наша компания поможет продать или найти недвижимость для вас или вашего бизнеса. Лучшие
+                                офисы, дома и квартиры с помощью Фирбо капитал становятся чуточку ближе. Сопровождение
+                                сделок, поиск недвижимости, сопровождение сделок и нежвижимость от компании Фирбо
+                                капитал.</p>
                             <div class="servicesBlock_types">
                                 <div class="servicesBlock_type">Снять/сдать</div>
                                 <div class="servicesBlock_type">Купить/продать</div>
@@ -446,19 +460,24 @@
                             </div>
                         </div>
                     </div>
+                    <div class="row servicesBlock_item  justify-content-around">
+                        <div class="col-md-3 servicesBlock_imageWrap">
+                            <div class="servicesBlock_image servicesBlock_image__charity"></div>
+                            <div class="servicesBlock_imageDottedPattern"></div>
+                        </div>
+                        <div class="col-md-7 servicesBlock_description">
+                            <h3>Благотворительность</h3>
+                            <p>Компания Фирбо Капитал самостоятельно участвует и организует различные благотворительные мероприятия. Фирбо Капитал работает только с проверенными фондами, частными организациями. Компания предлагает присоединиться физическим и юридическим лиц, кто желает помочь тому, кто ждет этой помощи.</p>
+                            <div class="servicesBlock_types">
+                                <div class="servicesBlock_type actionButton">Узнать больше<i
+                                        class="fas fa-arrow-circle-right"></i></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
-
-        <!-- <div class="aboutFull aboutFullFirst infoBlock">
-            <div class="container">
-                <i class="fas fa-plus-square fa-5x"></i>
-                <br>
-                <h3> История одной из самых известных инвестиционных фондов в России Firbo Capital берет свое начало в
-                    1996 году в Швейцарии.</h3>
-            </div>
-        </div> -->
 
 
 
@@ -469,50 +488,48 @@
 
     <footer id="footer">
 
-            <div class="btmFooter">
-                <div class="container">
-                    <div class="col-sm-12 bottomFooterLayout">
-                        <div class="bottomLinks">
-                            <a href="http://firbo.ru/">Firbo Capital</a>
-                            <a href="https://firbo-uslugi.ru/">Наши услуги</a>
-                            <a href="http://firbo-otzyvy.ru/">Отзывы</a>
-                            <a href="">Политика конфидициальности</a>
-                            <a href="https://firbo.ru/contacts.php">Контакты</a>
+                <div class="btmFooter">
+                    <div class="container-fluid">
+                        <div class="col-sm-12 bottomFooterLayout">
+                            <div class="bottomLinks">
+                                <a href="http://firbo.ru/">Firbo Capital</a>
+                                <a href="https://firbo-uslugi.ru/">Наши услуги</a>
+                                <a href="http://firbo-otzyvy.ru/">Отзывы</a>
+                                <a href="">Политика конфидициальности</a>
+                                <a href="https://firbo.ru/contacts.php">Контакты</a>
+                            </div>
+
+                            <ul class="social">
+                                <li><a href="https://www.facebook.com/FirboCapital/" class="social-btn social-facebook"
+                                        title="Фирбо новости в фейсбуке"><i class="ti-facebook"></i></a>
+                                </li>
+                                <li><a href="https://twitter.com/firbocapital" class="social-btn social-twitter" title="Фирбо новости в твиттере"><i
+                                            class="fab fa-twitter"></i></a>
+                                </li>
+                                <li><a href="https://www.instagram.com/firbocapital/" class="social-btn social-instagram"
+                                        title="Фирбо новости в инстаграме"><i class="fab fa-instagram"></i></a>
+                                </li>
+                                <li><a href="https://vk.com/firbocapital" class="social-btn social-vk" title="Фирбо новости во вконтакте"><i
+                                            class="fab fa-vk"></i></a>
+                                </li>
+                                <li><a href="https://ok.ru/firbocapital" class="social-btn social-ok" title="Фирбо новости в однокласниках"><i
+                                            class="fab fa-odnoklassniki"></i></a>
+                                </li>
+                            
+                            </ul>
                         </div>
 
-                        <ul class="social">
-                            <li><a href="https://www.facebook.com/groups/176475799834481/" class="social-btn social-facebook"
-                                    title="Фирбо новости в фейсбуке"><i class="ti-facebook"></i></a>
-                            </li>
-                            <li><a href="https://twitter.com/Firbo_News" class="social-btn social-twitter" title="Фирбо новости в твиттере"><i
-                                        class="fab fa-twitter"></i></a>
-                            </li>
-                            <li><a href="https://www.instagram.com/firbo_news/" class="social-btn social-instagram"
-                                    title="Фирбо новости в инстаграме"><i class="fab fa-instagram"></i></a>
-                            </li>
-                            <li><a href="https://vk.com/firbonews" class="social-btn social-vk" title="Фирбо новости во вконтакте"><i
-                                        class="fab fa-vk"></i></a>
-                            </li>
-                            <li><a href="https://www.ok.ru/group/59004804923434" class="social-btn social-ok" title="Фирбо новости в однокласниках"><i
-                                        class="fab fa-odnoklassniki"></i></a>
-                            </li>
-                            <li><a href="https://zen.yandex.ru/id/5b0e992c7800193a64d0b410" class="social-btn social-ok"
-                                    title="Фирбо новости в Яндекс.Дзене"><i class="fab fa-yandex"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="col-md-12 footerSecondRow">
-                        <div class="copyryght">
-                            <span>© 1996 - <span class="currentYear"></span> ООО "Фирбо Капитал"</span>
-                            <span>Использование материалов сайта на иных ресурсах разрешено только с письменного
-                                разрешения редакции Фирбо Капитал</span>
+                        <div class="col-md-12 footerSecondRow">
+                            <div class="copyryght">
+                                <span>© 1996 - <span class="currentYear"></span> ООО "Фирбо Капитал"</span>
+                                <span>Использование материалов сайта на иных ресурсах разрешено только с письменного
+                                    разрешения редакции Фирбо Капитал</span>
+                            </div>
+                            <img src="assets/img/logov2jstLogo.svg" alt="" class="ghostFooterLogo">
                         </div>
-                        <img src="assets/img/ghostLogo.jpg" alt="" class="ghostFooterLogo">
                     </div>
                 </div>
-            </div>
-        </footer>
+            </footer>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
@@ -526,9 +543,9 @@
 
     <script src="assets/js/moment-with-locales.js"></script>
     <script>
-        
+
         $(document).ready(function () {
-            
+
             var owl = $('.owl-carousel');
             var serviceTypeSelector = $(".innerJumbo_serviceType");
             owl.owlCarousel({
@@ -539,41 +556,52 @@
             });
 
             serviceTypeSelector.click(function () {
-                
+
                 if (this == serviceTypeSelector[0]) {
                     window.location.hash = "#personal";
-                    
+
                 } else {
                     window.location.hash = "#corp";
-                    
+
                 }
             });
-            if(window.location.hash){
+            if (window.location.hash) {
                 changeServiceType(window.location.hash);
             }
-            $(window).on('hashchange', function() {
+            $(window).on('hashchange', function () {
                 changeServiceType(window.location.hash);
             });
 
             function changeServiceType(hash) {
-                if(hash == "#personal"){
+                if (hash == "#personal") {
                     serviceTypeSelector.removeClass("selected");
                     serviceTypeSelector.eq(0).addClass("selected");
                     $(".innerJumbo_services").removeClass("innerJumbo_services__corp");
                     owl.trigger('to.owl.carousel', 0);
-                    
-                } else if (hash == "#corp"){
+
+                } else if (hash == "#corp") {
                     serviceTypeSelector.removeClass("selected");
                     serviceTypeSelector.eq(1).addClass("selected");
                     $(".innerJumbo_services").addClass("innerJumbo_services__corp");
                     owl.trigger('to.owl.carousel', 1);
                 }
             }
-            
+            var controller = new ScrollMagic.Controller();
+        var services = $(".servicesBlock_item");
+        services.each(function (i, el) {
+            console.log(el.offsetHeight);
+            new ScrollMagic.Scene({ duration: el.offsetHeight, triggerElement: el })
+                .setClassToggle(el, "servicesBlock_image__active")
+                .addTo(controller);
+        });
 
         });
 
     </script>
+    <script>
+        
+    </script>
+
 </body>
 
 </html>

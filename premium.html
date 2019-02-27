@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Firbo Capital</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/bundle.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Oswald:300,700&amp;subset=cyrillic"
+        rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/fav/favicon-16x16.png">
+    <link rel="manifest" href="/assets/img/fav/site.webmanifest">
+    <link rel="mask-icon" href="/assets/img/fav/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/assets/img/fav/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/assets/img/fav/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <div class="headerMenu">
+    
+        <div class="container-fluid">
+            <div class="col-md-12 headerMenu_topRow">
+                <div class="headerMenu_serviceType">
+                    <a href="/uslugi#personal" class="headerMenu_servicesType">Частным клиентам</a>
+                    <a href="/uslugi#corp" class="headerMenu_servicesType">Корпоративным клиентам</a>
+                    <a href="/premium" class="headerMenu_servicesType"><i class="fas fa-user-alt"></i> Фирбо премиум</a>
+                </div>
+                <a href="">8 800 234-44-11</a>
+            </div>
+            <div class="col-md-12 headerMenu_botRow">
+                <div class="headerMenu_bot_right VAcenter">
+                    <a href="./" class="headerMenu_homeLink">
+                        <img src="assets/img/whiteFirboLogo.svg" class="logoHeader" alt="">
+                        <img src="assets/img/blackFirboLogo.svg" class="logoHeader logoHeaderBlack" alt="">
+                    </a>
+                    <nav class="headerMenu_mainLinks VAcenter">
+                        <a href="/uslugi">Услуги</a>
+                        <a href="/about">О компании</a>
+                        <a href="https://firbonews.ru/">Новости</a>
+                        <a href="http://firbo-otzyvy.ru/">Отзывы</a>
+                        <a href="/contacts">Контакты</a>
+                    </nav>
+
+
+                </div>
+                <div class="headerMenu_menuLink VAcenter"><i class="far fa-bars"></i></div>
+            </div>
+            <div class="col-md-12"></div>
+        </div>
+        <div class="container-fluid headerMenu_mobileMenu">
+                <nav class="headerMenu_mobileLinks">
+                    <a href="/uslugi">Услуги</a>
+                    <a href="/about">О компании</a>
+                    <a href="https://firbonews.ru/">Новости</a>
+                    <a href="http://firbo-otzyvy.ru/">Отзывы</a>
+                    <a href="/contacts">Контакты</a>
+                </nav>
+            </div>
+    </div>
+    <script>
+        $('.headerMenu_menuLink').click(function () {
+            $('.headerMenu').toggleClass('headerMenu__activated');
+            if (!$('.headerMenu').hasClass('headerScroll')) {
+                $('.headerMenu').addClass('headerScroll');
+            }
+        });
+    </script>
+
+    <div class="pageContent innerJumbo innerJumbo_contacts premiumLogin">
+
+        <div class="container">
+            <div class="row justify-content-center">
+
+                <div class="col-md-6 contactForm form_firbo">
+                    <h2>Вход</h2>
+                    <form action="../login" method="post" class="contactForm2">
+                        <div class="row inputRow">
+                            <div class="col-md-12">
+                                <div class="inputWrap">
+
+                                    <input class="input" placeholder="Логин" name="login" type="text" required
+                                        minlength="2">
+                                    <span class="underline"></span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="row inputRow">
+                            <div class="col-md-12">
+                                <input class="input" placeholder="Пароль" name="pass" type="password" required
+                                        minlength="4">
+                            </div>
+                        </div>
+                        <div class="row">
+
+                            <div class="col-md-6">
+                                <button class="g-recaptcha contactCard__submit"
+                                    data-sitekey="6LdSO3sUAAAAAMft8XDMLFh8BouVolV_qIAV2tRM"
+                                    data-callback='onSubmit2'>Отправить</button>
+
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer id="footer">
+
+                <div class="btmFooter">
+                    <div class="container-fluid">
+                        <div class="col-sm-12 bottomFooterLayout">
+                            <div class="bottomLinks">
+                                <a href="http://firbo.ru/">Firbo Capital</a>
+                                <a href="https://firbo-uslugi.ru/">Наши услуги</a>
+                                <a href="http://firbo-otzyvy.ru/">Отзывы</a>
+                                <a href="">Политика конфидициальности</a>
+                                <a href="https://firbo.ru/contacts.php">Контакты</a>
+                            </div>
+
+                            <ul class="social">
+                                <li><a href="https://www.facebook.com/FirboCapital/" class="social-btn social-facebook"
+                                        title="Фирбо новости в фейсбуке"><i class="ti-facebook"></i></a>
+                                </li>
+                                <li><a href="https://twitter.com/firbocapital" class="social-btn social-twitter" title="Фирбо новости в твиттере"><i
+                                            class="fab fa-twitter"></i></a>
+                                </li>
+                                <li><a href="https://www.instagram.com/firbocapital/" class="social-btn social-instagram"
+                                        title="Фирбо новости в инстаграме"><i class="fab fa-instagram"></i></a>
+                                </li>
+                                <li><a href="https://vk.com/firbocapital" class="social-btn social-vk" title="Фирбо новости во вконтакте"><i
+                                            class="fab fa-vk"></i></a>
+                                </li>
+                                <li><a href="https://ok.ru/firbocapital" class="social-btn social-ok" title="Фирбо новости в однокласниках"><i
+                                            class="fab fa-odnoklassniki"></i></a>
+                                </li>
+                            
+                            </ul>
+                        </div>
+
+                        <div class="col-md-12 footerSecondRow">
+                            <div class="copyryght">
+                                <span>© 1996 - <span class="currentYear"></span> ООО "Фирбо Капитал"</span>
+                                <span>Использование материалов сайта на иных ресурсах разрешено только с письменного
+                                    разрешения редакции Фирбо Капитал</span>
+                            </div>
+                            <img src="assets/img/logov2jstLogo.svg" alt="" class="ghostFooterLogo">
+                        </div>
+                    </div>
+                </div>
+            </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TimelineMax.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+    <script src="assets/js/odometer.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/uslugi.js"></script>
+
+    <script src="assets/js/moment-with-locales.js"></script>
+    <script>
+        function animateCSS(element, animationName, callback) {
+            var node = document.querySelector(element)
+            node.classList.add('animated', animationName)
+
+            function handleAnimationEnd() {
+                node.classList.remove('animated', animationName)
+                node.removeEventListener('animationend', handleAnimationEnd)
+
+                if (typeof callback === 'function') callback()
+            }
+
+            node.addEventListener('animationend', handleAnimationEnd)
+        }
+        var buttonSend = document.querySelector(".contactCard__submit");
+        buttonSend.onclick = function (e) {
+            e.preventDefault();
+            animateCSS(".form_firbo", "shake");
+        };
+    </script>
+</body>
+
+</html>
