@@ -1,9 +1,7 @@
 @@include('modules/head.html')
 
-<body>
-    @@include('modules/menu.html'{
-        'shitty' : 
-    })
+<body class="index">
+    @@include('modules/menu.html')
 
 
     <div class="pageContent">
@@ -88,9 +86,9 @@
                         <div class="row">
                             <div class="col-md-12 relative">
                                 <a href="/uslugi">
-                                        <div class="services_card services_service">
-                                                <h4>Наши услуги</h4>
-                                            </div>
+                                    <div class="services_card services_service">
+                                        <h4>Наши услуги</h4>
+                                    </div>
                                 </a>
                                 <div class="services_card services_service ghost"></div>
                             </div>
@@ -106,7 +104,8 @@
                         <h4>Тысячи инвесторов уже убедились в том, что инвестиционная компания Firbo Capital –
                             безоговорочный лидер в России. </h4>
                         <p>Более 20 лет мы занимаемся инвестициями во всех направлениях фондовой биржи, строительства и
-                            консалтинга. За это время наша компания успела разработать сотни уникальных стратегий, которые
+                            консалтинга. За это время наша компания успела разработать сотни уникальных стратегий,
+                            которые
                             бесспорно являются лучшими инструментами для быстрого и безопасного получения прибыли. В
                             штате компании работают российские и иностранные специалисты в области инвестиций и
                             финансов с многолетним опытом. К каждому клиенту компании применяется индивидуальный
@@ -235,58 +234,49 @@
                     <div class="col-md-6"></div>
                 </div>
             </div>
-            <img src="assets/img/bubblesManGB.png" class="howBecomeClientMan" alt="">
+            <img src="../assets/img/bubblesManGB.png" class="howBecomeClientMan" alt="">
         </div>
         @@include('modules/footer.html')
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TimelineMax.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
-    <script src="assets/js/odometer.min.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
-    <script src="assets/js/common.js"></script>
-    <script src="assets/js/rss-parser.min.js"></script>
-    <script src="assets/js/moment-with-locales.js"></script>
+
+    <script src="../assets/js/bundle.js"></script>
+    
     <script>
+        /* Парсинг новостей */
 
-        // Note: some RSS feeds can't be loaded in the browser due to CORS security.
-        // To get around this, you can use a proxy.
-        // const CORS_PROXY = "https://cors-anywhere.herokuapp.com/"
-
-
-        $(document).ready(function () {
-            let parser = new RSSParser();
-            parser.parseURL('https://firbonews.ru/feed', function (err, feed) {
-                var firNewsh1 = $('.firboNews_h1');
-                var firNewsp = $('.firboNews_date');
-                var firNewsLink = $('.firboNews_link');
+        var parser = new RSSParser();
+        parser.parseURL('https://firbonews.ru/feed', function (err, feed) {
+            var firNewsh1 = $('.firboNews_h1');
+            var firNewsp = $('.firboNews_date');
+            var firNewsLink = $('.firboNews_link');
 
 
-                firNewsh1.each(function (i, el) {
-                    el.innerHTML = feed.items[i].title;
-                });
+            firNewsh1.each(function (i, el) {
+                el.innerHTML = feed.items[i].title;
+            });
 
-                firNewsLink.each(function (i, el) {
-                    el.setAttribute("href", feed.items[i].link);
-                    
-                });
-
-                firNewsp.each(function (i, el) {
-                    let date = feed.items[i].pubDate;
-
-                    el.innerHTML = moment(date).lang("ru").startOf('hour').fromNow();;
-
-                });
-                $(".firboNews_row__undoaded").removeClass('firboNews_row__undoaded');
-                $(".preloaderWrap").hide();
+            firNewsLink.each(function (i, el) {
+                el.setAttribute("href", feed.items[i].link);
 
             });
+
+            firNewsp.each(function (i, el) {
+                let date = feed.items[i].pubDate;
+
+                el.innerHTML = moment(date).lang("ru").startOf('hour').fromNow();;
+
+            });
+            $(".firboNews_row__undoaded").removeClass('firboNews_row__undoaded');
+            $(".preloaderWrap").hide();
+
         });
 
+        /* Парсинг новостей */
     </script>
+    
+
+
 </body>
 
 </html>

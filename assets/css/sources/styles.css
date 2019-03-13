@@ -187,7 +187,8 @@ ul {
   position: relative; }
 
 .pageContent {
-  min-height: calc(100vh - 9rem); }
+  min-height: calc(100vh - 9rem);
+  background-color: #f5f5fa; }
 
 .logoHeaderBlack {
   position: absolute;
@@ -424,7 +425,8 @@ footer {
   position: absolute;
   bottom: -60px;
   right: -10px;
-  opacity: 0.1; }
+  opacity: 0.1;
+  width: 14rem; }
 
 .social {
   margin: 0;
@@ -579,6 +581,10 @@ footer {
   .aboutFullFirst i {
     color: #E81B00; }
 
+.serviceFull_testom {
+  background: url(../img/customers.jpg);
+  color: white; }
+
 .aboutFull {
   background-repeat: no-repeat;
   background-position: center center;
@@ -699,7 +705,8 @@ footer {
   display: flex;
   justify-content: center;
   border-top: 1px solid rgba(196, 223, 238, 0.3);
-  margin-top: 4rem; }
+  margin-top: 4rem;
+  color: white; }
   .innerJumbo_servicesTypeSelector h5 {
     margin: 1rem 1rem;
     opacity: 0.6;
@@ -725,6 +732,9 @@ footer {
   background-position: center center;
   filter: hue-rotate(50deg);
   transition: 0.5s; }
+  .innerJumbo_services .jumboText {
+    padding-bottom: 1rem;
+    padding-top: 11rem; }
 
 .innerJumbo_services__corp {
   filter: hue-rotate(150deg);
@@ -858,8 +868,62 @@ footer {
   .servicesBlock_type i {
     margin-left: 0.5rem; }
 
-.servicesBlock_image__brok {
+.servicesBlock_image__broker {
   background-image: url(../img/servicesCards/brok.jpg); }
+
+.servicesBlock_image__broker2 {
+  background-image: url(../img/service/broker2.jpg); }
+
+.servicesBlock_image__broker3 {
+  background-image: url(../img/service/broker3.jpg); }
+
+.servicesBlock_image__broker4 {
+  background-image: url(../img/service/broker4.jpg); }
+
+.servicesBlock_image__broker5 {
+  background-image: url(../img/service/broker5.jpg); }
+
+.servicesBlock_image__broker6 {
+  background-image: url(../img/service/broker6.jpg); }
+
+.servicesBlock_image__broker7 {
+  background-image: url(../img/service/broker7.jpg); }
+
+.servicesBlock_image__broker8 {
+  background-image: url(../img/service/broker8.jpg); }
+
+.servicesBlock_image__broker9 {
+  background-image: url(../img/service/broker9.jpg); }
+
+.servicesBlock_image__broker10 {
+  background-image: url(../img/service/broker10.jpg); }
+
+.servicesBlock_image__broker11 {
+  background-image: url(../img/service/broker11.jpg); }
+
+.servicesBlock_image__broker12 {
+  background-image: url(../img/service/broker12.jpg); }
+
+.servicesBlock_image__broker13 {
+  background-image: url(../img/service/broker13.jpg); }
+
+.servicesBlock_image__broker14 {
+  background-image: url(../img/service/broker14.jpg); }
+
+.servicesBlock_image__broker15 {
+  background-image: url(../img/service/broker15.jpg); }
+
+.servicesBlock_image__broker16 {
+  background-image: url(../img/service/broker16.jpg); }
+
+.servicesBlock_image__broker17 {
+  background-image: url(../img/service/broker17.jpg); }
+
+.servicesBlock_image__broker18 {
+  background-image: url(../img/service/broker18.jpg); }
+
+.servicesBlock_image__broker20 {
+  background-image: url(../img/service/broker20.jpg); }
 
 .servicesBlock_image__depozit {
   background-image: url(../img/servicesCards/depozit.jpg); }
@@ -906,6 +970,39 @@ footer {
 
 .servicesBlock_image__charity {
   background-image: url(../img/servicesCards/charity.jpg); }
+
+.servicesBlock_image__gold {
+  background-image: url(../img/service/gold.jpg); }
+
+.servicesBlock_image__buildCrimea {
+  background-image: url(../img/service/buildCrimea.jpg); }
+
+.serviceBlock_image__startup2 {
+  background-image: url(../img/service/startup2.jpg); }
+
+.serviceBlock_image__startup2 {
+  background-image: url(../img/service/startup2.jpg); }
+
+.serviceBlock_image__estate {
+  background-image: url(../img/service/estate.jpg); }
+
+.serviceBlock_image__estate2 {
+  background-image: url(../img/service/estate2.jpg); }
+
+.serviceBlock_image__estate3 {
+  background-image: url(../img/service/estate3.jpg); }
+
+.serviceBlock_image__estate4 {
+  background-image: url(../img/service/estate4.jpg); }
+
+.serviceBlock_image__estate5 {
+  background-image: url(../img/service/estate5.jpg); }
+
+.serviceBlock_image__estate6 {
+  background-image: url(../img/service/estate6.jpg); }
+
+.serviceBlock_image__consulting2 {
+  background-image: url(../img/service/consulting2.jpg); }
 
 .contactWrap {
   display: flex;
@@ -1152,6 +1249,23 @@ input:focus::-webkit-input-placeholder {
     transform: scale(1.1);
     transition: 0.2s; }
 
+.firboActionButton {
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  padding: 1rem  2rem;
+  color: #c4dfee;
+  background: #001441;
+  background: -moz-linear-gradient(-45deg, #001441 47%, #410051 100%);
+  background: -webkit-linear-gradient(-45deg, #001441 47%, #410051 100%);
+  background: linear-gradient(135deg, #001441 47%, #410051 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001441', endColorstr='#410051',GradientType=1 );
+  transition: 0.2s; }
+  .firboActionButton:hover {
+    filter: hue-rotate(90deg);
+    transform: scale(1.1);
+    transition: 0.2s; }
+
 .actionButton {
   color: white;
   font-weight: 700;
@@ -1165,6 +1279,145 @@ input:focus::-webkit-input-placeholder {
     transform: scale(1.1);
     transition: 0.2s;
     cursor: pointer; }
+
+.text404 {
+  display: flex;
+  flex-direction: column; }
+  .text404 a {
+    color: #eee;
+    text-decoration: underline; }
+
+.adventegesBlock3 {
+  min-height: 15rem;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem; }
+  .adventegesBlock3 i {
+    margin-bottom: 1rem; }
+  .adventegesBlock3 h3 {
+    margin-bottom: 0.2rem; }
+  .adventegesBlock3 p {
+    font-size: 0.9rem;
+    opacity: 0.7;
+    line-height: 1.4; }
+
+.adventegesBlock_wrap {
+  margin-top: -4rem; }
+
+.serviceTestomonial {
+  background-color: #fff;
+  color: #001441;
+  padding: 3rem 4rem 3rem 4rem;
+  text-align: left;
+  position: relative; }
+  .serviceTestomonial h5 {
+    margin: 0;
+    margin-top: 1rem; }
+  .serviceTestomonial p, .serviceTestomonial h5 {
+    position: relative;
+    z-index: 2; }
+  .serviceTestomonial:before {
+    position: absolute;
+    color: #c4dfee;
+    z-index: 1;
+    top: 1rem;
+    left: 2rem;
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 400;
+    content: "\f10d";
+    font-size: 4rem;
+    opacity: 0.5; }
+  .serviceTestomonial:after {
+    position: absolute;
+    color: #c4dfee;
+    z-index: 1;
+    bottom: 2rem;
+    right: 3rem;
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 400;
+    content: "\f10e";
+    font-size: 4rem;
+    opacity: 0.5; }
+
+.serviceTestomonialWrap {
+  margin: 2rem 0;
+  filter: blur(3px); }
+
+.infoBlock__serviceTestom {
+  margin-bottom: 0; }
+
+.investMoneyColor {
+  filter: hue-rotate(50deg); }
+
+.creditColor {
+  filter: hue-rotate(100deg); }
+
+.creditColorAnti {
+  filter: hue-rotate(-100deg); }
+
+.individualServColor {
+  filter: hue-rotate(150deg); }
+
+.individualServColorAnti {
+  filter: hue-rotate(-150deg); }
+
+.buildingServColor {
+  filter: hue-rotate(200deg); }
+
+.buildingServColorAnti {
+  filter: hue-rotate(-200deg); }
+
+.startupServColor {
+  filter: hue-rotate(300deg); }
+
+.startupServColorAnti {
+  filter: hue-rotate(-300deg); }
+
+.brokerServColor {
+  filter: hue-rotate(350deg); }
+
+.brokerServColorAnti {
+  filter: hue-rotate(-350deg); }
+
+.tenderServColor {
+  filter: hue-rotate(400deg); }
+
+.tenderServColorAnti {
+  filter: hue-rotate(-400deg); }
+
+.estateServColor {
+  filter: hue-rotate(450deg); }
+
+.estateServColorAnti {
+  filter: hue-rotate(-450deg); }
+
+.findInvServColor {
+  filter: hue-rotate(500deg); }
+
+.findInvColorAnti {
+  filter: hue-rotate(-500deg); }
+
+.corpServColor {
+  filter: hue-rotate(550deg); }
+
+.corpServColorAnti {
+  filter: hue-rotate(-550deg); }
+
+.consultServColor {
+  filter: hue-rotate(650deg); }
+
+.consultColorAnti {
+  filter: hue-rotate(-650deg); }
+
+.lawServColor {
+  filter: hue-rotate(750deg); }
+
+.lawColorAnti {
+  filter: hue-rotate(-750deg); }
 
 @media screen and (max-width: 768px) {
   .headerMenu_mainLinks, .aboutFirboSlide, .headerMenu_servicesType {

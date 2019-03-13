@@ -1,5 +1,5 @@
 @@include('modules/head.html')
-<body>
+<body class="about">
     @@include('modules/menu.html')
 
     <div class="pageContent">
@@ -306,42 +306,9 @@
         @@include('modules/footer.html')
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TimelineMax.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
-    <script src="assets/js/odometer.min.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
-    <script src="assets/js/about.js"></script>
-    <script src="assets/js/rss-parser.min.js"></script>
-    <script src="assets/js/moment-with-locales.js"></script>
-    <script>
-
-
-        let parser = new RSSParser();
-        parser.parseURL('https://firbonews.ru/feed', function (err, feed) {
-            var firNewsh1 = $('.firboNews_h1');
-            var firNewsp = $('.firboNews_date');
-
-
-            firNewsh1.each(function (i, el) {
-                el.innerHTML = feed.items[i].title;
-
-
-            });
-            firNewsp.each(function (i, el) {
-                let date = feed.items[i].pubDate;
-
-                el.innerHTML = moment(date).lang("ru").startOf('hour').fromNow();;
-
-            });
-            $(".firboNews_row__undoaded").removeClass('firboNews_row__undoaded');
-            $(".preloaderWrap").hide();
-
-        })
-
-    </script>
+    <script src="../assets/js/bundle.js"></script>
+    
+    
 </body>
 
 </html>
